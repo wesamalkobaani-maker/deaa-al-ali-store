@@ -1,0 +1,3254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شركة ضياء العلي التجارية | أجهزة منزلية وكهربائية وطاقة بديلة وموبايلات</title>
+
+  <!-- Baked Store Data Placeholder (Automatically updated when exporting site for publishing) -->
+  <script id="baked-store-data">window.__BAKED_STORE_DATA__ = null;</script>
+
+  <!-- Google Fonts: Cairo for modern crisp Arabic typography, Inter for numbers/Latin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons for crisp UI & Social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- QRCode.js Library to generate the real scannable ShamCash QR code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Tailwind Configuration matching the DA Deaa Al-Ali Logo Palette -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'Inter', 'sans-serif'],
+            latin: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#FF9900',       // Primary Amber-Gold from DA logo
+              goldLight: '#FFB833',  // Lighter Gold highlight
+              goldDark: '#CC7A00',   // Deeper Gold for gradients
+              obsidian: '#080A0E',   // Deep Black background from logo
+              surface: '#11151D',    // Card surface dark
+              surfaceLight: '#1A202C'
+            }
+          },
+          keyframes: {
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            },
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(22px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(255, 153, 0, 0.45)' },
+              '50%': { boxShadow: '0 0 25px 6px rgba(255, 153, 0, 0.25)' },
+            },
+            marqueeRtl: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(50%)' },
+            },
+            slowZoom: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.06)' },
+            }
+          },
+          animation: {
+            'float-slow': 'floatSlow 5s ease-in-out infinite',
+            'shimmer': 'shimmer 3s linear infinite',
+            'fade-up': 'fadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'pulse-glow': 'pulseGlow 2.8s ease-in-out infinite',
+            'marquee-rtl': 'marqueeRtl 28s linear infinite',
+            'slow-zoom': 'slowZoom 18s ease-in-out infinite',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style id="custom-styles">
+    /* Smooth reveal helper for scroll animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Pause animated ticker smoothly on hover */
+    .marquee-wrapper:hover .marquee-track {
+      animation-play-state: paused;
+    }
+    /* Smooth rotating text transition in Hero */
+    .rotating-phrase {
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    .rotating-phrase.switching {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080A0E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2D3545;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF9900;
+    }
+    /* Ensure generated QR canvas/img fits neatly inside its frame */
+    #shamcash-qr img,
+    #shamcash-qr canvas,
+    #shamcash-qr-large img,
+    #shamcash-qr-large canvas {
+      margin: 0 auto;
+      border-radius: 0.75rem;
+      max-width: 100%;
+      height: auto !important;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-obsidian text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-brand-gold selection:text-black">
+
+  <!-- ===================================================================== -->
+  <!-- AMBIENT ANIMATED BACKGROUND GLOWS                                     -->
+  <!-- ===================================================================== -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+    <div class="absolute -top-40 -right-32 w-96 h-96 bg-brand-gold/15 rounded-full blur-3xl animate-float-slow"></div>
+    <div class="absolute top-1/2 -left-32 w-80 h-80 bg-amber-600/10 rounded-full blur-3xl animate-float-slow" style="animation-delay: 2s;"></div>
+    <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-brand-gold/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- STICKY NAVIGATION BAR                                                 -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-brand-obsidian/85 border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-3">
+
+        <!-- Company Brand Logo (Faithful SVG Vector Recreation of DA Deaa Al-Ali Logo) -->
+        <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+          <div class="relative w-12 h-12 sm:w-14 sm:h-14 shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-[0_0_12px_rgba(255,153,0,0.45)]" aria-label="شعار شركة ضياء العلي التجارية">
+              <circle cx="100" cy="100" r="96" fill="#050505" />
+              <circle cx="100" cy="100" r="88" fill="none" stroke="#FF9900" stroke-width="9" />
+              <circle cx="100" cy="100" r="74" fill="none" stroke="#FFFFFF" stroke-width="5" />
+              <circle cx="100" cy="100" r="70" fill="#050505" />
+              <path d="M 105 112 Q 152 104 180 76 Q 156 110 112 121 Z" fill="#FF9900" />
+              <path d="M 134 118 Q 160 110 177 89 Q 162 117 136 126 Z" fill="#FFFFFF" />
+              <text x="97" y="122" text-anchor="middle" fill="#FF9900" font-family="Georgia, serif" font-weight="900" font-size="68" letter-spacing="-4">DA</text>
+              <text x="100" y="148" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-weight="700" font-size="18.5" letter-spacing="0.4">Deaa Al-Ali</text>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-xl font-black tracking-tight text-white group-hover:text-brand-gold transition-colors">
+              شركة ضياء العلي
+            </span>
+            <span class="text-[11px] sm:text-xs font-semibold text-brand-gold/90 tracking-wide">
+              التجارية • كل ما تحتاجه في مكان واحد
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-bold text-slate-300">
+          <a href="#hero" class="hover:text-brand-gold transition-colors py-2">الرئيسية</a>
+          <a href="#catalog" class="hover:text-brand-gold transition-colors py-2">الأقسام والمنتجات</a>
+          <a href="#about" class="hover:text-brand-gold transition-colors py-2">نبذة عنا</a>
+          <a href="#customer-service" class="hover:text-brand-gold transition-colors py-2">خدمة الزبائن</a>
+          <a href="#shamcash" class="hover:text-brand-gold transition-colors py-2 flex items-center gap-1.5">
+            <i class="fa-solid fa-qrcode text-brand-gold"></i>
+            شام كاش
+          </a>
+          <a href="#contact" class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-brand-gold hover:text-black border border-white/10 transition-all flex items-center gap-1.5">
+            <i class="fa-solid fa-headset text-brand-gold"></i>
+            <span>تواصل معنا</span>
+          </a>
+        </nav>
+
+        <!-- Action Buttons: Admin Toggle + Direct WhatsApp + Mobile Menu -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button
+            id="toggle-admin-btn"
+            onclick="handleAdminButtonClick()"
+            class="flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold border border-brand-gold/40 bg-brand-gold/10 text-brand-gold hover:bg-brand-gold hover:text-black transition-all duration-300 cursor-pointer"
+            title="دخول إدارة المتجر (محمي بكلمة سر)"
+          >
+            <i id="admin-btn-icon" class="fa-solid fa-lock"></i>
+            <span id="admin-btn-label" class="hidden sm:inline">إدارة المتجر</span>
+          </button>
+
+          <a
+            href="https://wa.me/963997786117?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B6%D9%8A%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA%D9%83%D9%85."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden md:flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/20 transition-all duration-300"
+          >
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>واتساب</span>
+          </a>
+
+          <button
+            onclick="toggleMobileMenu()"
+            aria-label="القائمة"
+            class="lg:hidden p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 transition-colors"
+          >
+            <i id="mobile-menu-icon" class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-brand-surface/95 backdrop-blur-xl px-4 py-4 space-y-2">
+      <a href="#hero" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-bold text-slate-200 hover:bg-brand-gold/15 hover:text-brand-gold transition">الرئيسية</a>
+      <a href="#catalog" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-bold text-slate-200 hover:bg-brand-gold/15 hover:text-brand-gold transition">الأقسام والمنتجات</a>
+      <a href="#about" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-bold text-slate-200 hover:bg-brand-gold/15 hover:text-brand-gold transition">نبذة عنا</a>
+      <a href="#customer-service" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-bold text-slate-200 hover:bg-brand-gold/15 hover:text-brand-gold transition">خدمة الزبائن</a>
+      <a href="#shamcash" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-bold text-slate-200 hover:bg-brand-gold/15 hover:text-brand-gold transition">الدفع عبر شام كاش</a>
+      <a href="#contact" onclick="closeMobileMenu()" class="block px-4 py-3 rounded-xl font-bold text-brand-gold bg-white/5 hover:bg-brand-gold/15 transition">
+        <i class="fa-solid fa-phone-volume ml-2"></i>تواصل معنا
+      </a>
+      <button onclick="closeMobileMenu(); handleAdminButtonClick();" class="w-full text-right px-4 py-3 rounded-xl font-bold bg-brand-gold/15 text-brand-gold border border-brand-gold/30">
+        <i class="fa-solid fa-lock ml-2"></i>دخول / قفل إدارة المتجر
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- ADMIN CONTROL BANNER (Visible only when Admin Mode is active)         -->
+  <!-- ===================================================================== -->
+  <div id="admin-toolbar" class="hidden sticky top-20 z-30 bg-gradient-to-l from-amber-500 via-brand-gold to-amber-500 text-slate-950 shadow-xl border-b border-black/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-black/15">
+          <i class="fa-solid fa-screwdriver-wrench text-sm"></i>
+        </span>
+        <div>
+          <p class="text-sm font-black leading-tight">وضع إدارة المتجر مفعّل</p>
+          <p class="text-xs font-semibold opacity-85">أضف الصور والأسعار، ثم اضغط "حفظ الموقع للنشر" لتحميل ملف index.html الجاهز للزبائن.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-2">
+        <button
+          onclick="openProductModal()"
+          class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950 text-brand-gold hover:bg-slate-900 font-bold text-xs sm:text-sm shadow-md transition-transform active:scale-95 cursor-pointer"
+        >
+          <i class="fa-solid fa-plus"></i>
+          <span>إضافة منتج</span>
+        </button>
+
+        <button
+          onclick="openCategoryModal()"
+          class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950/90 text-white hover:bg-slate-900 font-bold text-xs sm:text-sm shadow-md transition-transform active:scale-95 cursor-pointer"
+        >
+          <i class="fa-solid fa-layer-group text-brand-gold"></i>
+          <span>إدارة الأقسام</span>
+        </button>
+
+        <button
+          onclick="openHeroBgModal()"
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-black/15 hover:bg-black/25 text-slate-950 font-bold text-xs sm:text-sm transition cursor-pointer"
+          title="تغيير صورة واجهة المحل في الخلفية"
+        >
+          <i class="fa-solid fa-image"></i>
+          <span class="hidden sm:inline">صورة واجهة المحل</span>
+        </button>
+
+        <!-- One-Click Publishable HTML Exporter -->
+        <button
+          onclick="exportPublishedHtml()"
+          class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-950 hover:bg-emerald-900 text-emerald-300 font-black text-xs sm:text-sm shadow-md transition cursor-pointer"
+          title="تنزيل ملف index.html متضمناً كل الصور والأسعار الجديدة لرفعه للزبائن"
+        >
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <span>حفظ الموقع للنشر (index.html)</span>
+        </button>
+
+        <button
+          onclick="exportCatalogData()"
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-black/15 hover:bg-black/25 text-slate-950 font-bold text-xs sm:text-sm transition cursor-pointer"
+          title="حفظ نسخة احتياطية JSON من المنتجات والأقسام"
+        >
+          <i class="fa-solid fa-download"></i>
+          <span class="hidden md:inline">نسخ احتياطي</span>
+        </button>
+
+        <label
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-black/15 hover:bg-black/25 text-slate-950 font-bold text-xs sm:text-sm transition cursor-pointer"
+          title="استعادة نسخة احتياطية JSON"
+        >
+          <i class="fa-solid fa-upload"></i>
+          <span class="hidden md:inline">استيراد</span>
+          <input type="file" accept=".json" class="hidden" onchange="importCatalogData(event)" />
+        </label>
+
+        <button
+          onclick="openChangePasswordModal()"
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-black/15 hover:bg-black/25 text-slate-950 font-bold text-xs sm:text-sm transition cursor-pointer"
+          title="تغيير كلمة سر إدارة المتجر"
+        >
+          <i class="fa-solid fa-key"></i>
+          <span class="hidden md:inline">كلمة السر</span>
+        </button>
+
+        <button
+          onclick="exitAdminMode()"
+          class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/85 hover:bg-white text-slate-950 font-bold text-xs sm:text-sm transition cursor-pointer"
+        >
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>قفل وإنهاء</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- ANIMATED OFFERS & CATEGORIES MARQUEE STRIP (نصوص متحركة)              -->
+  <!-- ===================================================================== -->
+  <div class="marquee-wrapper relative z-20 bg-gradient-to-l from-brand-surface via-brand-obsidian to-brand-surface border-b border-brand-gold/25 py-2.5 overflow-hidden">
+    <div class="marquee-track flex w-max items-center gap-8 animate-marquee-rtl whitespace-nowrap text-xs sm:text-sm font-bold text-slate-200">
+      <span class="flex items-center gap-2"><i class="fa-solid fa-sparkles text-brand-gold"></i> أهلاً بكم في شركة ضياء العلي التجارية — درعا، غباغب، الطريق العام</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-bolt text-brand-gold"></i> غسالات أوتوماتيك وحوضين • برادات وفريزرات • مبردات مياه وعارضات • مكيفات</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-fire-burner text-brand-gold"></i> أفران غاز • ساحبات • مكانس كهربائية • خلاطات • محضرات طعام • فرامات • مكاوي بخارية</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-solar-panel text-brand-gold"></i> حلول الطاقة الشمسية المتكاملة وأحدث الموبايلات بأسعار منافسة</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-wallet text-teal-400"></i> الدفع الإلكتروني متاح عبر شام كاش (ShamCash) • تواصل مباشر: 0997786117</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-sparkles text-brand-gold"></i> أهلاً بكم في شركة ضياء العلي التجارية — درعا، غباغب، الطريق العام</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-bolt text-brand-gold"></i> غسالات أوتوماتيك وحوضين • برادات وفريزرات • مبردات مياه وعارضات • مكيفات</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-fire-burner text-brand-gold"></i> أفران غاز • ساحبات • مكانس كهربائية • خلاطات • محضرات طعام • فرامات • مكاوي بخارية</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-solar-panel text-brand-gold"></i> حلول الطاقة الشمسية المتكاملة وأحدث الموبايلات بأسعار منافسة</span>
+      <span class="text-brand-gold/50">•</span>
+      <span class="flex items-center gap-2"><i class="fa-solid fa-wallet text-teal-400"></i> الدفع الإلكتروني متاح عبر شام كاش (ShamCash) • تواصل مباشر: 0997786117</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- HERO SECTION WITH STOREFRONT BACKGROUND IMAGE                         -->
+  <!-- ===================================================================== -->
+  <section id="hero" class="relative pt-12 pb-16 sm:pt-20 sm:pb-24 overflow-hidden">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <img
+        id="hero-bg-image"
+        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=85"
+        alt="واجهة ومعرض شركة ضياء العلي التجارية"
+        onerror="this.onerror=null; this.src='https://placehold.co/1600x900/080A0E/FF9900?text=Deaa+Al-Ali+Showroom';"
+        class="w-full h-full object-cover object-center opacity-35 animate-slow-zoom"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-obsidian/90 via-brand-obsidian/75 to-brand-obsidian"></div>
+      <div class="absolute inset-0 bg-gradient-to-l from-brand-obsidian/90 via-transparent to-brand-obsidian/80"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- Right Column (Arabic Main Content) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-right animate-fade-up">
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-gold/15 backdrop-blur-md border border-brand-gold/40 text-brand-gold text-xs sm:text-sm font-bold">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-gold"></span>
+              </span>
+              <span>درعا - غباغب - الطريق العام • جودة موثوقة وأسعار منافسة</span>
+            </div>
+
+            <button
+              id="hero-change-bg-pill"
+              onclick="openHeroBgModal()"
+              class="hidden inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-black/70 hover:bg-brand-gold text-white hover:text-black border border-brand-gold/50 text-xs font-bold transition cursor-pointer"
+            >
+              <i class="fa-solid fa-camera"></i>
+              <span>تغيير صورة واجهة المحل</span>
+            </button>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight sm:leading-[1.18] drop-shadow-lg">
+            شركة <span class="text-transparent bg-clip-text bg-gradient-to-l from-brand-gold via-amber-300 to-brand-gold">ضياء العلي</span> التجارية
+          </h1>
+
+          <!-- Animated Rotating Headline Phrase -->
+          <div class="min-h-[2.4rem] sm:min-h-[2.8rem] flex items-center justify-center lg:justify-start">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-2xl bg-brand-surface/80 backdrop-blur-md border border-white/15">
+              <i class="fa-solid fa-bolt text-brand-gold animate-pulse"></i>
+              <span id="animated-hero-phrase" class="rotating-phrase text-sm sm:text-lg font-extrabold text-amber-200">
+                أحدث الأدوات الكهربائية والمنزلية بضمان حقيقي
+              </span>
+            </div>
+          </div>
+
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            نقدم لكم أفضل <strong class="text-white">الأجهزة المنزلية والكهربائية</strong>، وحلول <strong class="text-brand-gold">الطاقة الشمسية البديلة</strong> المتكاملة، وأحدث <strong class="text-white">الموبايلات والإلكترونيات</strong> بضمان حقيقي وخدمة مميزة... كل ما تحتاجه في مكان واحد.
+          </p>
+
+          <!-- Category Quick Jump Pills -->
+          <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 pt-1">
+            <a href="#catalog" onclick="selectCategory('أدوات كهربائية')" class="px-3.5 py-2 rounded-xl bg-brand-surface/80 hover:bg-brand-gold hover:text-black border border-white/15 text-xs sm:text-sm font-bold text-slate-100 transition">
+              <i class="fa-solid fa-plug-circle-bolt text-brand-gold ml-1.5"></i>أدوات كهربائية (14 قسماً)
+            </a>
+            <a href="#catalog" onclick="selectCategory('طاقة بديلة')" class="px-3.5 py-2 rounded-xl bg-brand-surface/80 hover:bg-brand-gold hover:text-black border border-white/15 text-xs sm:text-sm font-bold text-slate-100 transition">
+              <i class="fa-solid fa-solar-panel text-brand-gold ml-1.5"></i>طاقة بديلة وشمسية
+            </a>
+            <a href="#catalog" onclick="selectCategory('أدوات منزلية')" class="px-3.5 py-2 rounded-xl bg-brand-surface/80 hover:bg-brand-gold hover:text-black border border-white/15 text-xs sm:text-sm font-bold text-slate-100 transition">
+              <i class="fa-solid fa-blender text-brand-gold ml-1.5"></i>أدوات منزلية
+            </a>
+            <a href="#catalog" onclick="selectCategory('موبايلات')" class="px-3.5 py-2 rounded-xl bg-brand-surface/80 hover:bg-brand-gold hover:text-black border border-white/15 text-xs sm:text-sm font-bold text-slate-100 transition">
+              <i class="fa-solid fa-mobile-screen-button text-brand-gold ml-1.5"></i>موبايلات
+            </a>
+          </div>
+
+          <!-- Primary CTAs including Contact Us -->
+          <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-3 pt-3">
+            <a
+              href="#catalog"
+              class="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-gradient-to-l from-brand-gold to-amber-500 hover:from-amber-400 hover:to-brand-gold text-slate-950 font-black text-base shadow-xl shadow-brand-gold/25 transition-all duration-300 hover:-translate-y-0.5 animate-pulse-glow"
+            >
+              <i class="fa-solid fa-store"></i>
+              <span>تصفح الأقسام والمنتجات</span>
+            </a>
+
+            <a
+              href="#contact"
+              class="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-brand-surface/85 hover:bg-white/15 text-white border border-brand-gold/40 font-bold text-base backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <i class="fa-solid fa-headset text-brand-gold"></i>
+              <span>تواصل معنا</span>
+            </a>
+
+            <a
+              href="#shamcash"
+              class="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 text-white border border-white/15 font-bold text-base backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <i class="fa-solid fa-qrcode text-brand-gold"></i>
+              <span>شام كاش</span>
+            </a>
+          </div>
+
+          <!-- Trust Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="text-xl sm:text-2xl font-black text-brand-gold font-latin">+100%</p>
+              <p class="text-xs text-slate-400 font-semibold">جودة مضمونة</p>
+            </div>
+            <div>
+              <p class="text-xl sm:text-2xl font-black text-white font-latin">24/7</p>
+              <p class="text-xs text-slate-400 font-semibold">طلب مباشر واتساب</p>
+            </div>
+            <div>
+              <p class="text-xl sm:text-2xl font-black text-brand-gold">شام كاش</p>
+              <p class="text-xs text-slate-400 font-semibold">دفع إلكتروني سريع</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Column: Animated Luxury Logo Showcase Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-brand-gold via-amber-200/30 to-brand-gold/10 opacity-60 blur-lg"></div>
+
+            <div class="relative rounded-[2rem] bg-brand-surface/90 border border-brand-gold/30 p-7 sm:p-9 backdrop-blur-xl shadow-2xl overflow-hidden">
+              <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent"></div>
+
+              <div class="flex flex-col items-center text-center">
+                <div class="w-40 h-40 sm:w-48 sm:h-48 animate-float-slow">
+                  <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-[0_10px_28px_rgba(255,153,0,0.45)]">
+                    <circle cx="100" cy="100" r="96" fill="#050505" />
+                    <circle cx="100" cy="100" r="88" fill="none" stroke="#FF9900" stroke-width="9" />
+                    <circle cx="100" cy="100" r="74" fill="none" stroke="#FFFFFF" stroke-width="5" />
+                    <circle cx="100" cy="100" r="70" fill="#050505" />
+                    <path d="M 105 112 Q 152 104 180 76 Q 156 110 112 121 Z" fill="#FF9900" />
+                    <path d="M 134 118 Q 160 110 177 89 Q 162 117 136 126 Z" fill="#FFFFFF" />
+                    <text x="97" y="122" text-anchor="middle" fill="#FF9900" font-family="Georgia, serif" font-weight="900" font-size="68" letter-spacing="-4">DA</text>
+                    <text x="100" y="148" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-weight="700" font-size="18.5" letter-spacing="0.4">Deaa Al-Ali</text>
+                  </svg>
+                </div>
+
+                <h2 class="mt-5 text-xl font-black text-white">ضياء العلي التجارية</h2>
+                <p class="text-xs sm:text-sm text-brand-gold font-bold mt-1">تجارة • طاقة شمسية • أجهزة كهربائية ومنزلية</p>
+
+                <div class="mt-6 w-full grid grid-cols-2 gap-3">
+                  <a
+                    href="tel:+963997786117"
+                    class="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-white/5 hover:bg-brand-gold hover:text-black border border-white/10 text-xs sm:text-sm font-bold transition-all"
+                  >
+                    <i class="fa-solid fa-phone"></i>
+                    <span dir="ltr" class="font-latin">0997786117</span>
+                  </a>
+                  <a
+                    href="https://wa.me/963997786117"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-black border border-emerald-500/30 text-xs sm:text-sm font-bold transition-all"
+                  >
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>تواصل فوري</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PRODUCT CATALOG & DYNAMIC MANAGEMENT SECTION                          -->
+  <!-- ===================================================================== -->
+  <section id="catalog" class="py-14 sm:py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 reveal">
+        <div>
+          <span class="text-brand-gold font-bold text-sm tracking-wider uppercase">الأقسام ومعرض المنتجات</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white mt-1">
+            تصفح الأقسام والمنتجات المتوفرة
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
+            اختر القسم الرئيسي (مثل <strong class="text-brand-gold">أدوات كهربائية</strong>) لاستعراض جميع الأقسام الفرعية، واضغط على <strong class="text-emerald-400">"اطلب الآن"</strong> للتواصل الفوري عبر واتساب.
+          </p>
+        </div>
+
+        <div id="catalog-admin-actions" class="hidden flex flex-wrap items-center gap-2.5 self-start md:self-auto">
+          <button
+            onclick="openCategoryModal()"
+            class="flex items-center gap-2 px-4 py-3 rounded-2xl bg-brand-surface hover:bg-white/10 text-white border border-white/15 font-bold text-xs sm:text-sm transition-all duration-300 shadow-lg cursor-pointer"
+          >
+            <i class="fa-solid fa-folder-plus text-brand-gold text-base"></i>
+            <span>إضافة / إدارة الأقسام</span>
+          </button>
+
+          <button
+            onclick="openProductModal()"
+            class="flex items-center gap-2 px-5 py-3 rounded-2xl bg-brand-surface hover:bg-brand-gold text-brand-gold hover:text-slate-950 border border-brand-gold/40 font-bold text-xs sm:text-sm transition-all duration-300 shadow-lg cursor-pointer"
+          >
+            <i class="fa-solid fa-circle-plus text-base"></i>
+            <span>إضافة منتج / تعديل الأسعار</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Search, Main Categories & Nested Subcategories Filter Box -->
+      <div class="space-y-4 mb-9 p-4 sm:p-5 rounded-3xl bg-brand-surface/85 border border-white/10 backdrop-blur-md reveal">
+        <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+          <div id="category-tabs" class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0"></div>
+
+          <div class="relative w-full lg:w-72 shrink-0">
+            <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            <input
+              type="text"
+              id="search-input"
+              oninput="handleSearch(this.value)"
+              placeholder="ابحث (غسالة، براد، مكيف، خلاط، لوح...)"
+              class="w-full pr-10 pl-4 py-2.5 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold focus:ring-1 focus:ring-brand-gold text-sm text-white placeholder-slate-500 outline-none transition"
+            />
+          </div>
+        </div>
+
+        <!-- Dynamic Subcategories Bar -->
+        <div id="subcategory-container" class="hidden pt-3.5 border-t border-white/10">
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span id="subcategory-heading" class="text-xs sm:text-sm font-extrabold text-brand-gold flex items-center gap-2">
+              <i class="fa-solid fa-sitemap"></i>
+              <span>الأقسام الفرعية:</span>
+            </span>
+            <button
+              id="subcat-add-admin-btn"
+              onclick="openCategoryModal()"
+              class="hidden text-xs font-bold text-slate-300 hover:text-brand-gold transition flex items-center gap-1 cursor-pointer"
+            >
+              <i class="fa-solid fa-plus"></i>
+              <span>إضافة قسم فرعي</span>
+            </button>
+          </div>
+          <div id="subcategory-tabs" class="flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <!-- Products Responsive Grid -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+
+      <!-- Empty Search State -->
+      <div id="empty-state" class="hidden text-center py-16 px-6 rounded-3xl bg-brand-surface/50 border border-white/10 mt-6">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-brand-gold/10 text-brand-gold flex items-center justify-center text-2xl mb-4">
+          <i class="fa-solid fa-box-open"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white">لم يتم العثور على منتجات مطابقة</h3>
+        <p class="text-slate-400 text-sm mt-2">جرب البحث بكلمة أخرى أو قم بإضافة منتج جديد إلى هذا القسم.</p>
+        <button
+          onclick="resetFilters()"
+          class="mt-5 px-6 py-2.5 rounded-xl bg-brand-gold text-black font-bold text-sm hover:bg-amber-400 transition cursor-pointer"
+        >
+          عرض جميع المنتجات
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- WHY CHOOSE US (FEATURES) SECTION                                      -->
+  <!-- ===================================================================== -->
+  <section id="features" class="py-14 sm:py-20 bg-brand-surface/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="text-brand-gold font-bold text-sm">لماذا شركة ضياء العلي التجارية؟</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white mt-1">ثقة عملائنا هي أساس نجاحنا</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-3xl bg-brand-surface border border-white/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-gold/15 text-brand-gold flex items-center justify-center text-2xl mb-5">
+            <i class="fa-solid fa-solar-panel"></i>
+          </div>
+          <h3 class="text-lg font-extrabold text-white mb-2">طاقة بديلة متكاملة</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">ألواح شمسية أصلية، انفرترات هجينة، وبطاريات ليثيوم وجل بكفاءة عالية وضمان موثوق.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-brand-surface border border-white/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-gold/15 text-brand-gold flex items-center justify-center text-2xl mb-5">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="text-lg font-extrabold text-white mb-2">جودة وأسعار منافسة</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">نختار لكم أفضل الماركات العالمية للأجهزة الكهربائية والمنزلية والموبايلات بأفضل سعر في السوق.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-brand-surface border border-white/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 reveal">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-2xl mb-5">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="text-lg font-extrabold text-white mb-2">طلب فوري وسريع</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">تواصل مباشر عبر واتساب بنقرة واحدة لتزويدك بالسعر اليومي وتفاصيل التوصيل والتركيب.</p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-brand-surface border border-white/10 hover:border-brand-gold/50 transition-all duration-300 hover:-translate-y-1 reveal">
+          <div class="w-14 h-14 rounded-2xl bg-sky-500/15 text-sky-400 flex items-center justify-center text-2xl mb-5">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+          <h3 class="text-lg font-extrabold text-white mb-2">دفع مرن عبر شام كاش</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">ادفع بكل سهولة وأمان عبر محفظة شام كاش (ShamCash) بمسح رمز QR أو نسخ العنوان مباشرة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ABOUT US SECTION (نبذة عنا)                                           -->
+  <!-- ===================================================================== -->
+  <section id="about" class="py-16 sm:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center reveal">
+        <div class="lg:col-span-7 space-y-5">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs sm:text-sm font-bold">
+            <i class="fa-solid fa-building"></i>
+            <span>نبذة عنا • من نحن</span>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl font-black text-white leading-snug">
+            شركة <span class="text-brand-gold">ضياء العلي التجارية</span> — شريكك الموثوق لكل مستلزمات المنزل والطاقة
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            تأسست <strong>شركة ضياء العلي التجارية</strong> في قلب محافظة درعا (<strong>غباغب - الطريق العام</strong>) لتكون الوجهة الأولى والشاملة للأسر وأصحاب المشاريع الباحثين عن الجودة العالية والأسعار المنافسة في مكان واحد.
+          </p>
+
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            نوفر تشكيلة واسعة ومتجددة تغطي <strong>الأدوات الكهربائية المنزلية</strong> بالكامل (من الغسالات والبرادات والمكيفات وأفران الغاز والمكانس إلى الأجهزة النسائية والرجالية ومحضرات الطعام)، إضافةً إلى <strong>أنظمة الطاقة البديلة والشمسية</strong> المعتمدة وأحدث <strong>الموبايلات</strong>، مع التزامنا الكامل بالشفافية والكفالة الحقيقية وخدمة ما بعد البيع.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3">
+            <div class="p-4 rounded-2xl bg-brand-surface border border-white/10">
+              <i class="fa-solid fa-shield-halved text-brand-gold text-xl mb-2"></i>
+              <h4 class="font-extrabold text-white text-sm">رؤيتنا</h4>
+              <p class="text-xs text-slate-400 mt-1">تقديم منتجات أصلية تدوم طويلاً وتلبي تطلعات كل بيت سوري.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-brand-surface border border-white/10">
+              <i class="fa-solid fa-handshake text-brand-gold text-xl mb-2"></i>
+              <h4 class="font-extrabold text-white text-sm">مصداقيتنا</h4>
+              <p class="text-xs text-slate-400 mt-1">أسعار واضحة ومحدثة يومياً مع استشارة صادقة قبل الشراء.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-brand-surface border border-white/10">
+              <i class="fa-solid fa-truck-fast text-brand-gold text-xl mb-2"></i>
+              <h4 class="font-extrabold text-white text-sm">راحتكم</h4>
+              <p class="text-xs text-slate-400 mt-1">طلب فوري عبر واتساب ودفع مرن عبر محفظة شام كاش.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-[2rem] bg-gradient-to-br from-brand-surface to-brand-obsidian border border-brand-gold/30 p-7 sm:p-8 shadow-2xl space-y-6">
+            <div class="flex items-center justify-between border-b border-white/10 pb-5">
+              <div>
+                <p class="text-xs font-bold text-brand-gold">موقع المعرض الرئيسي</p>
+                <h3 class="text-lg font-black text-white mt-0.5">درعا — غباغب — الطريق العام</h3>
+              </div>
+              <div class="w-12 h-12 rounded-2xl bg-brand-gold/15 text-brand-gold flex items-center justify-center text-xl">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-brand-obsidian/80 border border-white/10 text-center">
+                <p class="text-2xl sm:text-3xl font-black text-brand-gold font-latin">+14</p>
+                <p class="text-xs text-slate-300 font-bold mt-1">قسماً للأدوات الكهربائية</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-brand-obsidian/80 border border-white/10 text-center">
+                <p class="text-2xl sm:text-3xl font-black text-white font-latin">+1.9K</p>
+                <p class="text-xs text-slate-300 font-bold mt-1">متابع وعميل يثق بنا</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-brand-obsidian/80 border border-white/10 text-center">
+                <p class="text-2xl sm:text-3xl font-black text-emerald-400 font-latin">100%</p>
+                <p class="text-xs text-slate-300 font-bold mt-1">منتجات أصلية ومكفولة</p>
+              </div>
+              <div class="p-4 rounded-2xl bg-brand-obsidian/80 border border-white/10 text-center">
+                <p class="text-xl sm:text-2xl font-black text-brand-gold">دعم فوري</p>
+                <p class="text-xs text-slate-300 font-bold mt-1">قبل وبعد البيع</p>
+              </div>
+            </div>
+
+            <a
+              href="#customer-service"
+              class="w-full py-3.5 px-5 rounded-2xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-brand-gold/20"
+            >
+              <i class="fa-solid fa-headset"></i>
+              <span>تواصل مع فريق خدمة الزبائن</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CUSTOMER SERVICE SECTION (قسم خدمة الزبائن)                           -->
+  <!-- ===================================================================== -->
+  <section id="customer-service" class="py-16 sm:py-24 bg-brand-surface/50 border-y border-white/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-bold mb-3">
+          <i class="fa-solid fa-headset"></i>
+          <span>خدمة الزبائن والدعم الفني</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white">نحن هنا لخدمتك في كل خطوة</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          سواء كنت بحاجة لاستشارة لاختيار منظومة الطاقة الشمسية المناسبة، أو الاستفسار عن الأسعار، أو طلب صيانة ومتابعة كفالة — فريقنا جاهز للرد الفوري.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start reveal">
+        <div class="lg:col-span-6 space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-brand-surface border border-white/10 hover:border-brand-gold/40 transition">
+              <div class="w-11 h-11 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center text-lg mb-3">
+                <i class="fa-solid fa-comments-dollar"></i>
+              </div>
+              <h3 class="font-extrabold text-white text-sm">استشارة وتسعير فوري</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">نساعدك في اختيار الجهاز الأنسب لاحتياجاتك وميزانيتك مع تزويدك بأفضل سعر يومي.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-brand-surface border border-white/10 hover:border-brand-gold/40 transition">
+              <div class="w-11 h-11 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-lg mb-3">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="font-extrabold text-white text-sm">الكفالة وخدمة ما بعد البيع</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">متابعة مستمرة للكفالات والصيانة المعتمدة للأجهزة الكهربائية ومنظومات الطاقة.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-brand-surface border border-white/10 hover:border-brand-gold/40 transition">
+              <div class="w-11 h-11 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center text-lg mb-3">
+                <i class="fa-solid fa-solar-panel"></i>
+              </div>
+              <h3 class="font-extrabold text-white text-sm">دراسة منظومات الطاقة</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">حساب الأحمال الكهربائية بدقة لتحديد عدد الألواح والبطاريات والانفرتر المناسب.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-brand-surface border border-white/10 hover:border-brand-gold/40 transition">
+              <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-lg mb-3">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <h3 class="font-extrabold text-white text-sm">استجابة سريعة يومياً</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">نتلقى اتصالاتكم ورسائل الواتساب يومياً على الرقم <span dir="ltr" class="font-latin text-white">0997786117</span>.</p>
+            </div>
+          </div>
+
+          <div class="rounded-3xl bg-brand-surface border border-white/10 p-5 space-y-3">
+            <h3 class="font-black text-white text-base flex items-center gap-2 mb-2">
+              <i class="fa-solid fa-circle-question text-brand-gold"></i>
+              <span>الأسئلة الشائعة</span>
+            </h3>
+
+            <div class="rounded-2xl bg-brand-obsidian/70 border border-white/10 overflow-hidden">
+              <button onclick="toggleFaq(1)" class="w-full px-4 py-3.5 text-right flex items-center justify-between gap-2 text-xs sm:text-sm font-bold text-white hover:text-brand-gold transition cursor-pointer">
+                <span>كيف يمكنني معرفة السعر اليومي أو طلب منتج؟</span>
+                <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform"></i>
+              </button>
+              <div id="faq-body-1" class="hidden px-4 pb-3.5 text-xs text-slate-400 leading-relaxed">
+                بكل سهولة اضغط على زر "اطلب الآن عبر واتساب" تحت أي منتج، ليتم فتح محادثة مباشرة معنا مع اسم وصورة المنتج ونزودك بالسعر المحدث فوراً.
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-brand-obsidian/70 border border-white/10 overflow-hidden">
+              <button onclick="toggleFaq(2)" class="w-full px-4 py-3.5 text-right flex items-center justify-between gap-2 text-xs sm:text-sm font-bold text-white hover:text-brand-gold transition cursor-pointer">
+                <span>هل يتوفر الدفع الإلكتروني عبر شام كاش؟</span>
+                <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform"></i>
+              </button>
+              <div id="faq-body-2" class="hidden px-4 pb-3.5 text-xs text-slate-400 leading-relaxed">
+                نعم بالتأكيد! يمكنك مسح رمز QR الخاص بنا في قسم شام كاش أو نسخ عنوان المحفظة وإرسال إشعار التحويل عبر واتساب لتأكيد طلبك مباشرة.
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-brand-obsidian/70 border border-white/10 overflow-hidden">
+              <button onclick="toggleFaq(3)" class="w-full px-4 py-3.5 text-right flex items-center justify-between gap-2 text-xs sm:text-sm font-bold text-white hover:text-brand-gold transition cursor-pointer">
+                <span>هل الأجهزة الكهربائية تعمل مع الطاقة الشمسية؟</span>
+                <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-gold text-xs transition-transform"></i>
+              </button>
+              <div id="faq-body-3" class="hidden px-4 pb-3.5 text-xs text-slate-400 leading-relaxed">
+                نوفر تشكيلة واسعة من الغسالات والبرادات والمكيفات بتقنية الانفرتر الموفرة للطاقة والمصممة للعمل بكفاءة عالية على منظومات الطاقة البديلة.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl bg-brand-surface border border-brand-gold/30 p-6 sm:p-8 shadow-2xl">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-2xl">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <h3 class="text-lg sm:text-xl font-black text-white">أرسل طلبك إلى خدمة الزبائن</h3>
+                <p class="text-xs text-slate-400">سيتم توجيه رسالتك مباشرة لواتساب الشركة للرد السريع</p>
+              </div>
+            </div>
+
+            <form onsubmit="sendCustomerServiceRequest(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5">الاسم الكريم *</label>
+                  <input
+                    type="text"
+                    id="cs-name"
+                    required
+                    placeholder="اكتب اسمك هنا"
+                    class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5">رقم الجوال (اختياري)</label>
+                  <input
+                    type="tel"
+                    id="cs-phone"
+                    dir="ltr"
+                    placeholder="09xxxxxxxx"
+                    class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white text-right font-latin outline-none"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">نوع الخدمة المطلوبة *</label>
+                <select
+                  id="cs-type"
+                  class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+                >
+                  <option value="استفسار عن سعر منتج">استفسار عن سعر أو توفر منتج</option>
+                  <option value="استشارة طاقة شمسية">استشارة لتركيب منظومة طاقة شمسية</option>
+                  <option value="طلب صيانة أو كفالة">طلب صيانة أو متابعة كفالة</option>
+                  <option value="تأكيد دفعة شام كاش">تأكيد تحويل عبر شام كاش</option>
+                  <option value="اقتراح أو شكوى">اقتراح أو ملاحظة لخدمة الزبائن</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">تفاصيل الطلب أو الاستفسار *</label>
+                <textarea
+                  id="cs-message"
+                  required
+                  rows="4"
+                  placeholder="اكتب تفاصيل المنتج المطلوب أو استفسارك وسنقوم بالرد عليك بأسرع وقت..."
+                  class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-4 px-6 rounded-2xl bg-gradient-to-l from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-emerald-500/20 transition-all cursor-pointer"
+              >
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>إرسال مباشرة لخدمة الزبائن</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- SHAMCASH (شام كاش) PAYMENT SECTION                                    -->
+  <!-- ===================================================================== -->
+  <section id="shamcash" class="py-16 sm:py-24 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative rounded-[2rem] bg-gradient-to-br from-brand-surface via-[#121826] to-brand-obsidian border border-brand-gold/30 p-6 sm:p-10 lg:p-12 shadow-2xl overflow-hidden reveal">
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-teal-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-brand-gold/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-7 space-y-5 text-center md:text-right">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-teal-500/15 border border-teal-400/30 text-teal-300 text-xs sm:text-sm font-bold">
+              <svg class="w-5 h-5" viewBox="0 0 40 40" fill="none">
+                <path d="M18 4L32 13V22L22 28L18 25L26 20V16L18 11V4Z" fill="#7C96D6"/>
+                <path d="M22 36L8 27V18L18 12L22 15L14 20V24L22 29V36Z" fill="#59C4A8"/>
+              </svg>
+              <span>الدفع الإلكتروني المعتمد • شام كاش (ShamCash)</span>
+            </div>
+
+            <h2 class="text-2xl sm:text-4xl font-black text-white leading-snug">
+              حوّل بكل سهولة وأمان عبر <span class="text-brand-gold">شام كاش</span>
+            </h2>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              لتسهيل عمليات الشراء والحجز في شركة ضياء العلي التجارية، يمكنك الدفع مباشرة عبر تطبيق <strong>شام كاش</strong> بمسح رمز الاستجابة السريع (QR) أو نسخ عنوان المحفظة أدناه، ثم إرسال إشعار التحويل على واتساب.
+            </p>
+
+            <div class="space-y-3 pt-1">
+              <div class="flex items-center justify-between p-3.5 rounded-2xl bg-brand-obsidian/80 border border-white/10">
+                <div class="text-right">
+                  <span class="block text-[11px] text-slate-400 font-semibold">اسم الحساب</span>
+                  <span class="font-latin font-bold text-white text-base tracking-wide">deaa.ali</span>
+                </div>
+                <button
+                  onclick="copyText('deaa.ali', 'تم نسخ اسم حساب شام كاش: deaa.ali')"
+                  class="px-3.5 py-2 rounded-xl bg-white/5 hover:bg-brand-gold hover:text-black text-slate-200 text-xs font-bold transition flex items-center gap-1.5 cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span>نسخ</span>
+                </button>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-2xl bg-brand-obsidian/80 border border-brand-gold/30">
+                <div class="text-right min-w-0">
+                  <span class="block text-[11px] text-brand-gold font-semibold">عنوان محفظة شام كاش</span>
+                  <span dir="ltr" class="block font-latin font-bold text-white text-xs sm:text-sm break-all select-all mt-0.5">
+                    09cc0474ed07db3eeb3a81f37d34dc43
+                  </span>
+                </div>
+                <button
+                  onclick="copyText('09cc0474ed07db3eeb3a81f37d34dc43', 'تم نسخ عنوان محفظة شام كاش بنجاح!')"
+                  class="shrink-0 px-4 py-2.5 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 text-xs sm:text-sm font-black transition flex items-center justify-center gap-2 shadow-lg shadow-brand-gold/20 cursor-pointer"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span>نسخ العنوان</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-5 flex flex-col items-center">
+            <div class="relative bg-white rounded-3xl p-5 pt-7 shadow-2xl max-w-[270px] w-full text-center border-4 border-brand-gold/40">
+              <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded-2xl shadow-md border border-slate-100 flex items-center gap-1.5">
+                <svg class="w-6 h-6" viewBox="0 0 40 40" fill="none">
+                  <path d="M18 4L32 13V22L22 28L18 25L26 20V16L18 11V4Z" fill="#7C96D6"/>
+                  <path d="M22 36L8 27V18L18 12L22 15L14 20V24L22 29V36Z" fill="#59C4A8"/>
+                </svg>
+                <span class="font-bold text-xs text-slate-800">ShamCash</span>
+              </div>
+
+              <div id="shamcash-qr" class="p-2 flex justify-center items-center min-h-[190px]"></div>
+
+              <div class="mt-3 pt-2.5 border-t border-slate-200">
+                <p class="font-latin font-black text-slate-900 text-sm">deaa.ali</p>
+                <button
+                  onclick="openQrModal()"
+                  class="mt-2 w-full py-2 rounded-xl bg-slate-900 hover:bg-brand-gold hover:text-black text-white text-xs font-bold transition flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <i class="fa-solid fa-expand"></i>
+                  <span>تكبير الرمز للمسح</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CONTACT, LOCATION & SOCIAL MEDIA FOOTER                               -->
+  <!-- ===================================================================== -->
+  <footer id="contact" class="bg-brand-surface border-t border-white/10 pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 shrink-0">
+              <svg viewBox="0 0 200 200" class="w-full h-full">
+                <circle cx="100" cy="100" r="96" fill="#050505" />
+                <circle cx="100" cy="100" r="88" fill="none" stroke="#FF9900" stroke-width="9" />
+                <circle cx="100" cy="100" r="74" fill="none" stroke="#FFFFFF" stroke-width="5" />
+                <circle cx="100" cy="100" r="70" fill="#050505" />
+                <path d="M 105 112 Q 152 104 180 76 Q 156 110 112 121 Z" fill="#FF9900" />
+                <text x="97" y="122" text-anchor="middle" fill="#FF9900" font-family="Georgia, serif" font-weight="900" font-size="68" letter-spacing="-4">DA</text>
+                <text x="100" y="148" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, serif" font-weight="700" font-size="18.5">Deaa Al-Ali</text>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-black text-white">شركة ضياء العلي التجارية</h3>
+              <p class="text-xs text-brand-gold font-bold">Deaa Al-Ali Trading Co.</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            وجهتكم الموثوقة لأفضل الأجهزة المنزلية والكهربائية وحلول الطاقة الشمسية المتكاملة والموبايلات. جودة موثوقة، أسعار منافسة، وخدمة مميزة.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-base font-black text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
+            معلومات التواصل والعنوان
+          </h4>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-brand-gold mt-1"></i>
+              <span>درعا - غباغب - الطريق العام، سوريا (61111)</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone-volume text-brand-gold"></i>
+              <a href="tel:+963997786117" dir="ltr" class="font-latin font-bold hover:text-brand-gold transition">
+                0997 786 117
+              </a>
+              <button
+                onclick="copyText('0997786117', 'تم نسخ رقم الجوال: 0997786117')"
+                class="text-xs px-2.5 py-1 rounded-lg bg-white/5 hover:bg-brand-gold hover:text-black transition cursor-pointer"
+              >
+                نسخ
+              </button>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+              <a
+                href="https://wa.me/963997786117"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-emerald-400 transition font-semibold"
+              >
+                تواصل مباشر عبر واتساب
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-base font-black text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
+            تابعنا وتواصل معنا
+          </h4>
+          <p class="text-sm text-slate-400">تابع أحدث العروض اليومية والمنتجات الجديدة عبر منصاتنا الرسمية:</p>
+          <div class="flex flex-wrap gap-3 pt-1">
+            <a
+              href="https://wa.me/963997786117"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="واتساب"
+              class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500 text-emerald-400 hover:text-slate-950 border border-emerald-500/30 font-bold text-sm transition-all"
+            >
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>واتساب</span>
+            </a>
+
+            <a
+              href="https://www.facebook.com/search/top?q=%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B6%D9%8A%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="فيسبوك"
+              class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-500/15 hover:bg-blue-500 text-blue-400 hover:text-white border border-blue-500/30 font-bold text-sm transition-all"
+            >
+              <i class="fa-brands fa-facebook-f text-base"></i>
+              <span>فيسبوك</span>
+            </a>
+
+            <a
+              href="tel:+963997786117"
+              aria-label="اتصال هاتفي"
+              class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-gold/15 hover:bg-brand-gold text-brand-gold hover:text-slate-950 border border-brand-gold/30 font-bold text-sm transition-all"
+            >
+              <i class="fa-solid fa-phone"></i>
+              <span>اتصال</span>
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Ghabaghib+Daraa+Syria"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="الموقع على الخريطة"
+              class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/15 text-slate-200 border border-white/10 font-bold text-sm transition-all"
+            >
+              <i class="fa-solid fa-map-location-dot text-brand-gold"></i>
+              <span>الخريطة</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© <span id="current-year"></span> شركة ضياء العلي التجارية (Deaa Al-Ali). جميع الحقوق محفوظة.</p>
+        <p>تم التصميم بهوية بصرية حديثة لدعم الطلب المباشر والدفع عبر شام كاش.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- FLOATING WHATSAPP QUICK BUTTON                                        -->
+  <!-- ===================================================================== -->
+  <a
+    href="https://wa.me/963997786117?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B6%D9%8A%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B9%D9%84%D9%8A%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="تواصل معنا عبر واتساب"
+    class="fixed bottom-5 left-5 z-40 flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black shadow-2xl shadow-emerald-500/40 transition-transform duration-300 hover:scale-105"
+  >
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="hidden sm:inline text-sm">اطلب عبر واتساب</span>
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: ADD / EDIT PRODUCT & PRICE MODAL                             -->
+  <!-- ===================================================================== -->
+  <div id="product-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm overflow-y-auto">
+    <div class="relative w-full max-w-xl rounded-3xl bg-brand-surface border border-brand-gold/30 shadow-2xl overflow-hidden my-auto">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-brand-obsidian/60">
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center">
+            <i class="fa-solid fa-box"></i>
+          </span>
+          <h3 id="modal-title" class="text-lg font-black text-white">إضافة منتج جديد</h3>
+        </div>
+        <button onclick="closeProductModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <form id="product-form" onsubmit="saveProduct(event)" class="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
+        <input type="hidden" id="prod-id" />
+
+        <!-- Product Name -->
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">اسم المنتج *</label>
+          <input
+            type="text"
+            id="prod-name"
+            required
+            placeholder="مثال: غسالة أوتوماتيك 8 كغ انفرتر"
+            class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+          />
+        </div>
+
+        <!-- Category & Subcategory -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">القسم الرئيسي *</label>
+            <select
+              id="prod-category"
+              onchange="populateSubcategorySelect(this.value)"
+              class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+            ></select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">القسم الفرعي</label>
+            <select
+              id="prod-subcategory"
+              class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+            ></select>
+          </div>
+        </div>
+
+        <!-- Optional Badge -->
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">شارة مميزة (اختياري)</label>
+          <input
+            type="text"
+            id="prod-badge"
+            placeholder="مثال: عرض خاص، جديد، الأكثر مبيعاً"
+            class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+          />
+        </div>
+
+        <!-- Price & Currency -->
+        <div class="p-4 rounded-2xl bg-brand-obsidian/70 border border-white/10 space-y-3">
+          <div class="flex items-center justify-between">
+            <label class="text-xs font-bold text-brand-gold">السعر (اتركه فارغاً ليظهر "السعر عند الطلب")</label>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="sm:col-span-2">
+              <input
+                type="text"
+                id="prod-price"
+                placeholder="مثال: 120 أو 1,500,000"
+                class="w-full px-4 py-2.5 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-sm text-white font-latin outline-none"
+              />
+            </div>
+            <div>
+              <select
+                id="prod-currency"
+                class="w-full px-3 py-2.5 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+              >
+                <option value="$">دولار ($)</option>
+                <option value="ل.س">ليرة سورية (ل.س)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Image (Upload from Gallery OR Paste Image URL) -->
+        <div class="p-4 rounded-2xl bg-brand-obsidian/70 border border-white/10 space-y-3">
+          <label class="block text-xs font-bold text-brand-gold">صورة المنتج (اختر من جهازك أو ضع رابط صورة)</label>
+
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-xl bg-brand-surface border border-white/10 overflow-hidden shrink-0 flex items-center justify-center">
+              <img
+                id="prod-img-preview"
+                src="https://placehold.co/200x200/11151D/FF9900?text=DA"
+                alt="معاينة الصورة"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="flex-1 space-y-2">
+              <label class="flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-brand-gold/15 hover:bg-brand-gold hover:text-black text-brand-gold border border-brand-gold/40 text-xs font-bold cursor-pointer transition">
+                <i class="fa-solid fa-camera"></i>
+                <span>رفع صورة من الهاتف / الكمبيوتر</span>
+                <input type="file" id="prod-img-file" accept="image/*" class="hidden" onchange="handleImageUpload(event)" />
+              </label>
+
+              <input
+                type="url"
+                id="prod-img-url"
+                oninput="previewImageUrl(this.value)"
+                placeholder="أو الصق رابط الصورة المباشر هنا (https://...)"
+                class="w-full px-3 py-2 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-xs text-white font-latin outline-none"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Description -->
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">المواصفات والوصف المختصر</label>
+          <textarea
+            id="prod-desc"
+            rows="3"
+            placeholder="اكتب أهم المواصفات أو الكفالة..."
+            class="w-full px-4 py-3 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-sm text-white outline-none resize-none"
+          ></textarea>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button
+            type="button"
+            onclick="closeProductModal()"
+            class="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 font-bold text-sm transition cursor-pointer"
+          >
+            إلغاء
+          </button>
+          <button
+            type="submit"
+            class="px-6 py-3 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg shadow-brand-gold/25 transition flex items-center gap-2 cursor-pointer"
+          >
+            <i class="fa-solid fa-floppy-disk"></i>
+            <span>حفظ المنتج</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: QUICK ORDER / WHATSAPP WITH IMAGE PREVIEW MODAL              -->
+  <!-- ===================================================================== -->
+  <div id="order-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="relative w-full max-w-md rounded-3xl bg-brand-surface border border-emerald-500/40 shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-white/10 bg-brand-obsidian/70">
+        <div class="flex items-center gap-2 text-emerald-400 font-black">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>طلب المنتج عبر واتساب</span>
+        </div>
+        <button onclick="closeOrderModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-5 space-y-4">
+        <div class="flex gap-3.5 items-center p-3 rounded-2xl bg-brand-obsidian border border-white/10">
+          <img id="order-img" src="" alt="" class="w-20 h-20 rounded-xl object-cover shrink-0 border border-white/10" />
+          <div class="min-w-0">
+            <span id="order-cat" class="text-[11px] font-bold text-brand-gold"></span>
+            <h4 id="order-name" class="text-sm sm:text-base font-black text-white truncate"></h4>
+            <p id="order-price" class="text-xs sm:text-sm font-bold text-emerald-400 mt-1"></p>
+          </div>
+        </div>
+
+        <p class="text-xs text-slate-300 leading-relaxed bg-emerald-500/10 border border-emerald-500/20 p-3 rounded-xl">
+          <i class="fa-solid fa-circle-info text-emerald-400 ml-1"></i>
+          سيتم فتح محادثة واتساب مباشرة مع <strong>شركة ضياء العلي التجارية (0997786117)</strong> وإرسال تفاصيل المنتج وصورته لتزويدك بالسعر النهائي فوراً.
+        </p>
+
+        <div class="flex flex-col gap-2.5">
+          <a
+            id="order-wa-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="closeOrderModal()"
+            class="w-full py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/25 transition"
+          >
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>فتح واتساب وإرسال الطلب الآن</span>
+          </a>
+
+          <button
+            id="order-share-img-btn"
+            onclick="shareProductWithImageFile()"
+            class="hidden w-full py-3 px-4 rounded-xl bg-brand-gold/15 hover:bg-brand-gold text-brand-gold hover:text-black border border-brand-gold/40 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition cursor-pointer"
+          >
+            <i class="fa-solid fa-share-nodes"></i>
+            <span>إرفاق ملف الصورة مباشرة (مشاركة للهاتف)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 3: DELETE CONFIRMATION MODAL                                    -->
+  <!-- ===================================================================== -->
+  <div id="delete-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="w-full max-w-sm rounded-3xl bg-brand-surface border border-red-500/30 p-6 text-center shadow-2xl space-y-4">
+      <div class="w-14 h-14 mx-auto rounded-2xl bg-red-500/15 text-red-400 flex items-center justify-center text-2xl">
+        <i class="fa-solid fa-trash-can"></i>
+      </div>
+      <h3 class="text-lg font-black text-white">تأكيد حذف المنتج</h3>
+      <p id="delete-modal-text" class="text-sm text-slate-400">هل أنت متأكد من حذف هذا المنتج من المتجر؟</p>
+      <div class="flex items-center justify-center gap-3 pt-2">
+        <button onclick="closeDeleteModal()" class="flex-1 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-200 font-bold text-sm transition cursor-pointer">
+          إلغاء
+        </button>
+        <button onclick="confirmDeleteProduct()" class="flex-1 py-2.5 rounded-xl bg-red-500 hover:bg-red-400 text-white font-bold text-sm transition cursor-pointer">
+          نعم، احذف
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 4: LARGE SHAMCASH QR MODAL                                      -->
+  <!-- ===================================================================== -->
+  <div id="qr-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm" onclick="closeQrModal()">
+    <div class="bg-white rounded-3xl p-6 max-w-sm w-full text-center shadow-2xl space-y-4" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between">
+        <span class="font-black text-slate-900 text-base">شام كاش • ShamCash</span>
+        <button onclick="closeQrModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 flex items-center justify-center cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="shamcash-qr-large" class="p-2 flex justify-center"></div>
+      <div class="space-y-1">
+        <p class="font-latin font-black text-slate-900 text-lg">deaa.ali</p>
+        <p dir="ltr" class="font-latin text-xs text-slate-600 break-all">09cc0474ed07db3eeb3a81f37d34dc43</p>
+      </div>
+      <button
+        onclick="copyText('09cc0474ed07db3eeb3a81f37d34dc43', 'تم نسخ عنوان شام كاش بنجاح!')"
+        class="w-full py-3 rounded-xl bg-slate-900 hover:bg-brand-gold hover:text-black text-white font-bold text-sm transition cursor-pointer"
+      >
+        <i class="fa-regular fa-copy ml-1.5"></i>نسخ عنوان المحفظة
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 5: MANAGE & ADD CATEGORIES / SUBCATEGORIES MODAL                -->
+  <!-- ===================================================================== -->
+  <div id="category-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm overflow-y-auto">
+    <div class="relative w-full max-w-2xl rounded-3xl bg-brand-surface border border-brand-gold/30 shadow-2xl overflow-hidden my-auto">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-brand-obsidian/70">
+        <div class="flex items-center gap-2.5">
+          <span class="w-9 h-9 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center">
+            <i class="fa-solid fa-layer-group"></i>
+          </span>
+          <h3 class="text-lg font-black text-white">إدارة وإضافة الأقسام والأقسام الفرعية</h3>
+        </div>
+        <button onclick="closeCategoryModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-6 max-h-[80vh] overflow-y-auto">
+        <!-- Add Main Category Form -->
+        <form onsubmit="addMainCategory(event)" class="p-4 rounded-2xl bg-brand-obsidian/75 border border-white/10 space-y-3">
+          <h4 class="text-sm font-black text-brand-gold flex items-center gap-2">
+            <i class="fa-solid fa-folder-plus"></i>
+            <span>إضافة قسم رئيسي جديد</span>
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+            <input
+              type="text"
+              id="new-main-cat-name"
+              required
+              placeholder="اسم القسم الجديد (مثال: أدوات إنارة، مستلزمات مكتبية)"
+              class="sm:col-span-6 px-3.5 py-2.5 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+            />
+            <select
+              id="new-main-cat-icon"
+              class="sm:col-span-3 px-3 py-2.5 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-xs text-white outline-none"
+            >
+              <option value="fa-plug-circle-bolt">أيقونة كهرباء</option>
+              <option value="fa-solar-panel">أيقونة طاقة شمسية</option>
+              <option value="fa-blender">أيقونة منزلية</option>
+              <option value="fa-mobile-screen-button">أيقونة موبايل</option>
+              <option value="fa-lightbulb">أيقونة إنارة</option>
+              <option value="fa-tv">أيقونة شاشات</option>
+              <option value="fa-box-open">أيقونة منتجات عامة</option>
+            </select>
+            <button
+              type="submit"
+              class="sm:col-span-3 py-2.5 px-4 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm transition cursor-pointer"
+            >
+              + إضافة قسم
+            </button>
+          </div>
+        </form>
+
+        <!-- Add Subcategory Form -->
+        <form onsubmit="addSubCategory(event)" class="p-4 rounded-2xl bg-brand-obsidian/75 border border-brand-gold/25 space-y-3">
+          <h4 class="text-sm font-black text-emerald-400 flex items-center gap-2">
+            <i class="fa-solid fa-sitemap"></i>
+            <span>إضافة قسم فرعي داخل قسم رئيسي</span>
+          </h4>
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+            <select
+              id="parent-cat-select"
+              class="sm:col-span-4 px-3 py-2.5 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-xs sm:text-sm text-white outline-none"
+            ></select>
+            <input
+              type="text"
+              id="new-sub-cat-name"
+              required
+              placeholder="اسم القسم الفرعي (مثال: جلايات صحون، شاشات)"
+              class="sm:col-span-5 px-3.5 py-2.5 rounded-xl bg-brand-surface border border-white/10 focus:border-brand-gold text-sm text-white outline-none"
+            />
+            <button
+              type="submit"
+              class="sm:col-span-3 py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm transition cursor-pointer"
+            >
+              + إضافة فرعي
+            </button>
+          </div>
+        </form>
+
+        <!-- Current Categories & Subcategories Tree -->
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <h4 class="text-sm font-black text-white">الأقسام الحالية في المتجر</h4>
+            <button
+              type="button"
+              onclick="resetCategoriesToDefault()"
+              class="text-xs font-bold text-slate-400 hover:text-brand-gold transition cursor-pointer"
+            >
+              <i class="fa-solid fa-rotate-left ml-1"></i>استعادة الأقسام الافتراضية
+            </button>
+          </div>
+          <div id="categories-manager-list" class="space-y-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 6: CHANGE HERO STOREFRONT BACKGROUND IMAGE                      -->
+  <!-- ===================================================================== -->
+  <div id="hero-bg-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="relative w-full max-w-md rounded-3xl bg-brand-surface border border-brand-gold/30 shadow-2xl overflow-hidden">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-brand-obsidian/70">
+        <div class="flex items-center gap-2 text-brand-gold font-black">
+          <i class="fa-solid fa-store"></i>
+          <span>صورة خلفية واجهة المحل</span>
+        </div>
+        <button onclick="closeHeroBgModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <div class="aspect-video rounded-2xl overflow-hidden border border-white/15 bg-brand-obsidian">
+          <img id="hero-bg-preview" src="" alt="معاينة واجهة المحل" class="w-full h-full object-cover" />
+        </div>
+
+        <label class="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-sm cursor-pointer transition shadow-lg">
+          <i class="fa-solid fa-camera"></i>
+          <span>اختر صورة واجهة المحل من جهازك</span>
+          <input type="file" accept="image/*" class="hidden" onchange="handleHeroBgUpload(event)" />
+        </label>
+
+        <div class="space-y-2">
+          <label class="block text-xs font-bold text-slate-400">أو الصق رابط صورة مباشرة:</label>
+          <div class="flex gap-2">
+            <input
+              type="url"
+              id="hero-bg-url-input"
+              placeholder="https://..."
+              class="flex-1 px-3 py-2.5 rounded-xl bg-brand-obsidian border border-white/10 focus:border-brand-gold text-xs text-white font-latin outline-none"
+            />
+            <button
+              onclick="applyHeroBgUrl()"
+              class="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-brand-gold hover:text-black text-white font-bold text-xs transition cursor-pointer"
+            >
+              تطبيق
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center pt-2 border-t border-white/10">
+          <button
+            onclick="resetHeroBgDefault()"
+            class="text-xs font-bold text-slate-400 hover:text-brand-gold transition cursor-pointer"
+          >
+            استعادة الخلفية الافتراضية
+          </button>
+          <button
+            onclick="closeHeroBgModal()"
+            class="px-5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition cursor-pointer"
+          >
+            إغلاق
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 7: ADMIN PASSWORD LOGIN MODAL                                   -->
+  <!-- ===================================================================== -->
+  <div id="admin-login-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm" onclick="closeAdminLoginModal()">
+    <div class="relative w-full max-w-sm rounded-3xl bg-brand-surface border border-brand-gold/40 shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-brand-obsidian/70">
+        <div class="flex items-center gap-2.5 text-brand-gold font-black">
+          <span class="w-9 h-9 rounded-xl bg-brand-gold/15 flex items-center justify-center">
+            <i class="fa-solid fa-shield-halved"></i>
+          </span>
+          <span>دخول إدارة المتجر</span>
+        </div>
+        <button onclick="closeAdminLoginModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form onsubmit="verifyAdminLogin(event)" class="p-6 space-y-4">
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          هذه اللوحة مخصصة لإدارة <strong>شركة ضياء العلي التجارية</strong> فقط. يرجى إدخال كلمة السر للمتابعة.
+        </p>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">كلمة السر *</label>
+          <div class="relative">
+            <input
+              type="password"
+              id="admin-login-password"
+              required
+              autocomplete="current-password"
+              placeholder="أدخل كلمة السر هنا..."
+              class="w-full pr-4 pl-11 py-3 rounded-xl bg-brand-obsidian border border-white/15 focus:border-brand-gold text-sm text-white font-latin outline-none"
+            />
+            <button
+              type="button"
+              onclick="togglePasswordVisibility('admin-login-password', this)"
+              aria-label="إظهار أو إخفاء كلمة السر"
+              class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-brand-gold transition cursor-pointer"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+          <p id="admin-login-error" class="hidden mt-2 text-xs font-bold text-red-400 flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>كلمة السر غير صحيحة، يرجى المحاولة مجدداً.</span>
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3 pt-1">
+          <button
+            type="button"
+            onclick="closeAdminLoginModal()"
+            class="flex-1 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 font-bold text-sm transition cursor-pointer"
+          >
+            إلغاء
+          </button>
+          <button
+            type="submit"
+            class="flex-1 py-3 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg shadow-brand-gold/25 transition flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <i class="fa-solid fa-lock-open"></i>
+            <span>دخول</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 8: CHANGE ADMIN PASSWORD MODAL                                  -->
+  <!-- ===================================================================== -->
+  <div id="change-password-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm" onclick="closeChangePasswordModal()">
+    <div class="relative w-full max-w-sm rounded-3xl bg-brand-surface border border-brand-gold/40 shadow-2xl overflow-hidden" onclick="event.stopPropagation()">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-brand-obsidian/70">
+        <div class="flex items-center gap-2.5 text-brand-gold font-black">
+          <span class="w-9 h-9 rounded-xl bg-brand-gold/15 flex items-center justify-center">
+            <i class="fa-solid fa-key"></i>
+          </span>
+          <span>تغيير كلمة سر الإدارة</span>
+        </div>
+        <button onclick="closeChangePasswordModal()" class="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 transition cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form onsubmit="saveNewAdminPassword(event)" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">كلمة السر الحالية *</label>
+          <input
+            type="password"
+            id="current-admin-pass-input"
+            required
+            placeholder="أدخل كلمة السر الحالية"
+            class="w-full px-4 py-2.5 rounded-xl bg-brand-obsidian border border-white/15 focus:border-brand-gold text-sm text-white font-latin outline-none"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">كلمة السر الجديدة *</label>
+          <div class="relative">
+            <input
+              type="password"
+              id="new-admin-pass-input"
+              required
+              minlength="4"
+              placeholder="4 أحرف أو أرقام على الأقل"
+              class="w-full pr-4 pl-11 py-2.5 rounded-xl bg-brand-obsidian border border-white/15 focus:border-brand-gold text-sm text-white font-latin outline-none"
+            />
+            <button
+              type="button"
+              onclick="togglePasswordVisibility('new-admin-pass-input', this)"
+              aria-label="إظهار أو إخفاء كلمة السر الجديدة"
+              class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-brand-gold transition cursor-pointer"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">تأكيد كلمة السر الجديدة *</label>
+          <input
+            type="password"
+            id="confirm-admin-pass-input"
+            required
+            minlength="4"
+            placeholder="أعد كتابة كلمة السر الجديدة"
+            class="w-full px-4 py-2.5 rounded-xl bg-brand-obsidian border border-white/15 focus:border-brand-gold text-sm text-white font-latin outline-none"
+          />
+        </div>
+
+        <p id="change-pass-error" class="hidden text-xs font-bold text-red-400"></p>
+
+        <p class="text-[11px] text-slate-400 leading-relaxed bg-brand-obsidian/70 border border-white/10 p-3 rounded-xl">
+          <i class="fa-solid fa-circle-info text-brand-gold ml-1"></i>
+          تذكّر الضغط على زر <strong>"حفظ الموقع للنشر (index.html)"</strong> بعد تغيير كلمة السر لتُعتمد على الموقع المنشور أيضاً.
+        </p>
+
+        <div class="flex items-center gap-3 pt-1">
+          <button
+            type="button"
+            onclick="closeChangePasswordModal()"
+            class="flex-1 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 font-bold text-sm transition cursor-pointer"
+          >
+            إلغاء
+          </button>
+          <button
+            type="submit"
+            class="flex-1 py-2.5 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-sm shadow-lg shadow-brand-gold/25 transition cursor-pointer"
+          >
+            حفظ كلمة السر
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- CUSTOM TOAST NOTIFICATION CONTAINER                                   -->
+  <!-- ===================================================================== -->
+  <div id="toast-container" class="fixed top-24 left-1/2 -translate-x-1/2 z-[60] flex flex-col items-center gap-2 pointer-events-none w-[90%] max-w-md"></div>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT APPLICATION LOGIC                                          -->
+  <!-- ===================================================================== -->
+  <script>
+    const COMPANY_WHATSAPP = '963997786117';
+    const SHAMCASH_WALLET = '09cc0474ed07db3eeb3a81f37d34dc43';
+    const STORAGE_KEY = 'deaa_al_ali_products_v2';
+    const CATEGORIES_STORAGE_KEY = 'deaa_al_ali_categories_v2';
+    const HERO_BG_STORAGE_KEY = 'deaa_al_ali_herobg_v1';
+    const ADMIN_PASS_STORAGE_KEY = 'deaa_al_ali_admin_pass_v1';
+    const MODIFIED_TS_KEY = 'deaa_al_ali_modified_ts_v1';
+    const DEFAULT_ADMIN_PASS = '2026';
+    const DEFAULT_HERO_BG = 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=85';
+
+    const HERO_PHRASES = [
+      'أحدث الأدوات الكهربائية والمنزلية بضمان حقيقي',
+      'غسالات • برادات • فريزرات • مكيفات • أفران غاز • مكانس',
+      'منظومات الطاقة الشمسية البديلة بأعلى كفاءة وأفضل سعر',
+      'أدوات كهربائية نسائية ورجالية • خلاطات • محضرات طعام • فرامات',
+      'دفع إلكتروني سريع عبر شام كاش وتواصل مباشر عبر واتساب'
+    ];
+
+    const DEFAULT_CATEGORIES = [
+      {
+        id: 'أدوات كهربائية',
+        label: 'أدوات كهربائية',
+        icon: 'fa-plug-circle-bolt',
+        subcategories: [
+          'غسالات أوتوماتيك',
+          'غسالات حوضين',
+          'برادات وفريزرات',
+          'مبردات مياه وعارضات',
+          'مكيفات',
+          'مكاوي كهربائية وبخارية',
+          'أدوات كهربائية نسائية',
+          'أدوات كهربائية رجالية',
+          'أفران غاز',
+          'ساحبات',
+          'مكانس كهربائية',
+          'خلاطات',
+          'محضرات طعام',
+          'فرامات'
+        ]
+      },
+      {
+        id: 'طاقة بديلة',
+        label: 'طاقة بديلة وشمسية',
+        icon: 'fa-solar-panel',
+        subcategories: [
+          'ألواح طاقة شمسية',
+          'انفرترات هجينة',
+          'بطاريات ليثيوم وجل',
+          'منظمات وقواطع طاقة'
+        ]
+      },
+      {
+        id: 'أدوات منزلية',
+        label: 'أدوات منزلية',
+        icon: 'fa-blender',
+        subcategories: [
+          'أطقم طبخ ومطبخ',
+          'أدوات ضيافة وتقديم',
+          'تنظيم ومستلزمات المنزل'
+        ]
+      },
+      {
+        id: 'موبايلات',
+        label: 'موبايلات',
+        icon: 'fa-mobile-screen-button',
+        subcategories: [
+          'هواتف ذكية',
+          'شواحن وباور بانك',
+          'سماعات وإكسسوارات'
+        ]
+      }
+    ];
+
+    const DEFAULT_PRODUCTS = [
+      {
+        id: 'p-101',
+        name: 'لوح طاقة شمسية 550 واط (Mono Half-Cell)',
+        category: 'طاقة بديلة',
+        subcategory: 'ألواح طاقة شمسية',
+        price: '115',
+        currency: '$',
+        badge: 'الأكثر مبيعاً',
+        description: 'لوح شمسي عالي الكفاءة مقاوم للحرارة والظروف الجوية، مناسب للمنازل والمنشآت مع كفالة حقيقية.',
+        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-102',
+        name: 'انفرتر طاقة شمسية هجين 5.5 كيلو واط',
+        category: 'طاقة بديلة',
+        subcategory: 'انفرترات هجينة',
+        price: '380',
+        currency: '$',
+        badge: 'ضمان حقيقي',
+        description: 'انفرتر ذكي بشاحن MPPT مدمج، يدعم العمل مع البطاريات أو بدونها وبأداء مستقر وثابت.',
+        image: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-104',
+        name: 'غسالة أوتوماتيك انفرتر 8 كغ',
+        category: 'أدوات كهربائية',
+        subcategory: 'غسالات أوتوماتيك',
+        price: '340',
+        currency: '$',
+        badge: 'عرض خاص',
+        description: 'موفرة للطاقة الكهربائية وتعمل بكفاءة عالية على أنظمة الطاقة الشمسية مع 15 برنامج غسيل.',
+        image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-105',
+        name: 'مكيف سبليت انفرتر 1.5 طن (حار / بارد)',
+        category: 'أدوات كهربائية',
+        subcategory: 'مكيفات',
+        price: '420',
+        currency: '$',
+        badge: 'موفر للطاقة',
+        description: 'تبريد فائق السرعة واستهلاك منخفض للأمبير، مثالي للاستخدام مع منظومات الطاقة البديلة.',
+        image: 'https://images.unsplash.com/photo-1631545806609-35d4ae440431?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-109',
+        name: 'براد عائلي ديجيتال انفرتر نوفروست',
+        category: 'أدوات كهربائية',
+        subcategory: 'برادات وفريزرات',
+        price: '',
+        currency: '$',
+        badge: 'كفالة شاملة',
+        description: 'تبريد متوازن بتقنية No-Frost مع استهلاك منخفض جداً للكهرباء وتصميم أنيق واسع.',
+        image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-110',
+        name: 'فرن غاز 5 رؤوس ستانلس ستيل أمان كامل',
+        category: 'أدوات كهربائية',
+        subcategory: 'أفران غاز',
+        price: '',
+        currency: '$',
+        badge: 'جودة عالية',
+        description: 'إشعال ذاتي، شواية مدمجة، زجاج حراري مزدوج وتوزيع حراري ممتاز للخبز والطبخ.',
+        image: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-111',
+        name: 'مكنسة كهربائية عالية الشفط 2200 واط',
+        category: 'أدوات كهربائية',
+        subcategory: 'مكانس كهربائية',
+        price: '75',
+        currency: '$',
+        badge: 'عرض مميز',
+        description: 'قوة شفط فائقة مع فلتر HEPA لتنقية الغبار وصوت هادئ وسلك طويل لسهولة الحركة.',
+        image: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-106',
+        name: 'خلاط ومحضّر طعام متعدد الاستخدامات',
+        category: 'أدوات كهربائية',
+        subcategory: 'خلاطات',
+        price: '45',
+        currency: '$',
+        badge: 'جديد',
+        description: 'محرك نحاسي قوي مع شفرات ستانلس ستيل مقاومة للصدأ ووعاء زجاجي متين.',
+        image: 'https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-112',
+        name: 'مكواة بخارية احترافية قاعدة سيراميك',
+        category: 'أدوات كهربائية',
+        subcategory: 'مكاوي كهربائية وبخارية',
+        price: '28',
+        currency: '$',
+        badge: '',
+        description: 'بخار مكثف لإزالة أصعب التجاعيد بسهولة مع ميزة التنظيف الذاتي وحماية الأقمشة.',
+        image: 'https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-107',
+        name: 'طقم تحضير القهوة والضيافة المنزلي',
+        category: 'أدوات منزلية',
+        subcategory: 'أدوات ضيافة وتقديم',
+        price: '65',
+        currency: '$',
+        badge: '',
+        description: 'تصميم أنيق وعصري وجودة ممتازة لتحضير وتقديم ألذ المشروبات في منزلك.',
+        image: 'https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=800&q=80'
+      },
+      {
+        id: 'p-108',
+        name: 'هاتف ذكي 256GB • كاميرا احترافية وشحن سريع',
+        category: 'موبايلات',
+        subcategory: 'هواتف ذكية',
+        price: '',
+        currency: '$',
+        badge: 'أحدث إصدار',
+        description: 'شاشة AMOLED ساطعة، بطارية 5000mAh تدوم طوال اليوم، مع كفالة وإكسسوارات أصلية.',
+        image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80'
+      }
+    ];
+
+    /**
+     * Application State
+     */
+    let CLEAN_TEMPLATE_HTML = '';
+    let categories = [];
+    let products = [];
+    let currentHeroBg = DEFAULT_HERO_BG;
+    let currentAdminPassword = DEFAULT_ADMIN_PASS;
+    let activeCategory = 'الكل';
+    let activeSubcategory = 'الكل';
+    let searchQuery = '';
+    let isAdminMode = false;
+    let uploadedImageDataUrl = '';
+    let pendingDeleteId = null;
+    let activeOrderProduct = null;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      try {
+        // Capture clean initial DOM template before rendering dynamic nodes (used for one-click publish export)
+        CLEAN_TEMPLATE_HTML = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        loadStoreState();
+        renderCategoryTabs();
+        renderSubcategoryTabs();
+        renderProducts();
+        generateShamCashQRCodes();
+        initScrollReveal();
+        initAnimatedHeroText();
+      } catch (error) {
+        console.error('Initialization error:', error);
+        showToast('حدث خطأ أثناء تحميل الصفحة، يرجى التحديث.', 'error');
+      }
+    });
+
+    /**
+     * Loads store state intelligently:
+     * Prioritizes published baked data if newer than local drafts, otherwise uses local edits or defaults.
+     */
+    function loadStoreState() {
+      const baked = window.__BAKED_STORE_DATA__;
+      let localTs = 0;
+      try {
+        localTs = Number(localStorage.getItem(MODIFIED_TS_KEY) || 0);
+      } catch (e) {}
+
+      const useBaked = baked && typeof baked === 'object' && (!localTs || (baked.publishedAt && baked.publishedAt >= localTs));
+
+      if (useBaked) {
+        categories = Array.isArray(baked.categories) && baked.categories.length > 0
+          ? baked.categories
+          : JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
+        products = Array.isArray(baked.products) && baked.products.length > 0
+          ? baked.products
+          : [...DEFAULT_PRODUCTS];
+        currentHeroBg = baked.heroBg || DEFAULT_HERO_BG;
+        currentAdminPassword = baked.adminPass || DEFAULT_ADMIN_PASS;
+      } else {
+        loadCategoriesFromStorage();
+        loadProductsFromStorage();
+        loadHeroBgFromStorage();
+        loadAdminPasswordFromStorage();
+      }
+
+      const heroImg = document.getElementById('hero-bg-image');
+      if (heroImg && currentHeroBg) {
+        heroImg.src = currentHeroBg;
+      }
+    }
+
+    function loadAdminPasswordFromStorage() {
+      try {
+        const savedPass = localStorage.getItem(ADMIN_PASS_STORAGE_KEY);
+        if (savedPass && savedPass.trim() !== '') {
+          currentAdminPassword = savedPass;
+          return;
+        }
+      } catch (e) {}
+      currentAdminPassword = (window.__BAKED_STORE_DATA__ && window.__BAKED_STORE_DATA__.adminPass) || DEFAULT_ADMIN_PASS;
+    }
+
+    function markLocalModified() {
+      try {
+        localStorage.setItem(MODIFIED_TS_KEY, String(Date.now()));
+      } catch (e) {}
+    }
+
+    function initAnimatedHeroText() {
+      const phraseEl = document.getElementById('animated-hero-phrase');
+      if (!phraseEl) return;
+      let phraseIdx = 0;
+      setInterval(() => {
+        phraseEl.classList.add('switching');
+        setTimeout(() => {
+          phraseIdx = (phraseIdx + 1) % HERO_PHRASES.length;
+          phraseEl.textContent = HERO_PHRASES[phraseIdx];
+          phraseEl.classList.remove('switching');
+        }, 420);
+      }, 3600);
+    }
+
+    function loadCategoriesFromStorage() {
+      try {
+        const saved = localStorage.getItem(CATEGORIES_STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            categories = parsed;
+            return;
+          }
+        }
+      } catch (e) {
+        console.warn('Could not read categories from storage:', e);
+      }
+      categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
+    }
+
+    function persistCategories() {
+      try {
+        localStorage.setItem(CATEGORIES_STORAGE_KEY, JSON.stringify(categories));
+        markLocalModified();
+      } catch (e) {
+        console.error('Failed saving categories:', e);
+      }
+    }
+
+    function loadHeroBgFromStorage() {
+      try {
+        const savedBg = localStorage.getItem(HERO_BG_STORAGE_KEY);
+        if (savedBg) {
+          currentHeroBg = savedBg;
+        }
+      } catch (e) {
+        console.warn('Could not load custom hero background:', e);
+      }
+    }
+
+    function loadProductsFromStorage() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            products = parsed;
+            return;
+          }
+        }
+      } catch (e) {
+        console.warn('Could not read localStorage, using default products:', e);
+      }
+      products = [...DEFAULT_PRODUCTS];
+    }
+
+    function persistProducts() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+        markLocalModified();
+      } catch (e) {
+        console.error('Storage quota exceeded:', e);
+        showToast('مساحة التخزين ممتلئة! يفضل استخدام روابط صور أو صور بحجم أصغر.', 'error');
+      }
+    }
+
+    /**
+     * =========================================================================
+     * Rendering UI: Main Category Tabs, Subcategory Tabs & Product Grid
+     * =========================================================================
+     */
+    function renderCategoryTabs() {
+      const container = document.getElementById('category-tabs');
+      const allTab = { id: 'الكل', label: 'الكل', icon: 'fa-border-all' };
+      const fullList = [allTab, ...categories];
+
+      container.innerHTML = fullList.map(cat => {
+        const isActive = activeCategory === cat.id;
+        const subCount = cat.subcategories && cat.subcategories.length > 0
+          ? `<span class="text-[10px] px-1.5 py-0.5 rounded-md ${isActive ? 'bg-black/20 text-slate-950' : 'bg-white/10 text-slate-300'} font-latin">${cat.subcategories.length}</span>`
+          : '';
+        return `
+          <button
+            onclick="selectCategory('${escapeJsAttr(cat.id)}')"
+            class="shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
+              isActive
+                ? 'bg-brand-gold text-slate-950 shadow-lg shadow-brand-gold/25'
+                : 'bg-brand-obsidian/70 text-slate-300 hover:text-white hover:bg-white/10 border border-white/10'
+            }"
+          >
+            <i class="fa-solid ${escapeHtml(cat.icon || 'fa-box')}"></i>
+            <span>${escapeHtml(cat.label)}</span>
+            ${subCount}
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderSubcategoryTabs() {
+      const wrapper = document.getElementById('subcategory-container');
+      const listEl = document.getElementById('subcategory-tabs');
+      const headingEl = document.getElementById('subcategory-heading');
+
+      if (activeCategory === 'الكل') {
+        wrapper.classList.add('hidden');
+        return;
+      }
+
+      const currentCat = categories.find(c => c.id === activeCategory);
+      if (!currentCat || !currentCat.subcategories || currentCat.subcategories.length === 0) {
+        wrapper.classList.add('hidden');
+        return;
+      }
+
+      wrapper.classList.remove('hidden');
+      headingEl.innerHTML = `<i class="fa-solid fa-sitemap"></i><span>أقسام ${escapeHtml(currentCat.label)} (${currentCat.subcategories.length}):</span>`;
+
+      const subs = ['الكل', ...currentCat.subcategories];
+      listEl.innerHTML = subs.map(sub => {
+        const isSubActive = activeSubcategory === sub;
+        const label = sub === 'الكل' ? `الكل في ${currentCat.label}` : sub;
+        return `
+          <button
+            onclick="selectSubcategory('${escapeJsAttr(sub)}')"
+            class="px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer ${
+              isSubActive
+                ? 'bg-brand-gold/20 text-brand-gold border border-brand-gold shadow-sm'
+                : 'bg-brand-obsidian/80 text-slate-300 hover:text-white hover:border-brand-gold/40 border border-white/10'
+            }"
+          >
+            ${escapeHtml(label)}
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectCategory(catId) {
+      activeCategory = catId;
+      activeSubcategory = 'الكل';
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderProducts();
+    }
+
+    function selectSubcategory(subName) {
+      activeSubcategory = subName;
+      renderSubcategoryTabs();
+      renderProducts();
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.trim().toLowerCase();
+      renderProducts();
+    }
+
+    function resetFilters() {
+      activeCategory = 'الكل';
+      activeSubcategory = 'الكل';
+      searchQuery = '';
+      document.getElementById('search-input').value = '';
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderProducts();
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('products-grid');
+      const emptyState = document.getElementById('empty-state');
+
+      const filtered = products.filter(p => {
+        const matchCat = activeCategory === 'الكل' || p.category === activeCategory;
+        const matchSub = activeSubcategory === 'الكل' || p.subcategory === activeSubcategory;
+        const matchQuery =
+          !searchQuery ||
+          p.name.toLowerCase().includes(searchQuery) ||
+          (p.description && p.description.toLowerCase().includes(searchQuery)) ||
+          (p.subcategory && p.subcategory.toLowerCase().includes(searchQuery)) ||
+          p.category.toLowerCase().includes(searchQuery);
+        return matchCat && matchSub && matchQuery;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+
+      grid.innerHTML = filtered.map((product, index) => {
+        const hasPrice = product.price && String(product.price).trim() !== '';
+        const formattedPrice = hasPrice
+          ? `<span class="text-xl font-black text-brand-gold font-latin">${escapeHtml(product.price)}</span> <span class="text-xs font-bold text-amber-200">${escapeHtml(product.currency || '$')}</span>`
+          : `<span class="text-sm font-bold text-brand-gold">السعر عند الطلب (تواصل واتساب)</span>`;
+
+        const safeFallback = `https://placehold.co/600x450/11151D/FF9900?text=${encodeURIComponent(product.category)}`;
+
+        return `
+          <article
+            class="group flex flex-col rounded-3xl bg-brand-surface border border-white/10 hover:border-brand-gold/50 overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-1.5"
+            style="animation: fadeUp 0.45s ease forwards; animation-delay: ${Math.min(index * 60, 360)}ms;"
+          >
+            <div class="relative aspect-[4/3] bg-brand-obsidian overflow-hidden">
+              <img
+                src="${escapeHtml(product.image || safeFallback)}"
+                alt="${escapeHtml(product.name)}"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='${safeFallback}';"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-surface via-transparent to-transparent opacity-80"></div>
+
+              <span class="absolute top-3 right-3 px-3 py-1 rounded-xl bg-black/75 backdrop-blur-md border border-white/15 text-[11px] font-bold text-slate-200 max-w-[65%] truncate">
+                ${escapeHtml(product.subcategory || product.category)}
+              </span>
+
+              ${product.badge ? `
+                <span class="absolute top-3 left-3 px-3 py-1 rounded-xl bg-brand-gold text-slate-950 text-[11px] font-black shadow-md">
+                  ${escapeHtml(product.badge)}
+                </span>
+              ` : ''}
+
+              ${isAdminMode ? `
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 z-10">
+                  <button
+                    onclick="openProductModal('${escapeJsAttr(product.id)}')"
+                    class="flex-1 py-2 px-3 rounded-xl bg-brand-gold hover:bg-amber-400 text-slate-950 font-black text-xs shadow-lg flex items-center justify-center gap-1.5 transition cursor-pointer"
+                  >
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span>تعديل السعر/الصورة</span>
+                  </button>
+                  <button
+                    onclick="openDeleteModal('${escapeJsAttr(product.id)}')"
+                    aria-label="حذف المنتج"
+                    class="p-2 rounded-xl bg-red-500 hover:bg-red-400 text-white shadow-lg transition cursor-pointer"
+                  >
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              ` : ''}
+            </div>
+
+            <div class="flex flex-col flex-1 p-5">
+              <h3 class="text-base sm:text-lg font-extrabold text-white leading-snug line-clamp-2 group-hover:text-brand-gold transition-colors">
+                ${escapeHtml(product.name)}
+              </h3>
+
+              <p class="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed line-clamp-2 flex-1">
+                ${escapeHtml(product.description || 'متوفر لدى شركة ضياء العلي التجارية بجودة موثوقة.')}
+              </p>
+
+              <div class="mt-4 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2">
+                <div>
+                  ${formattedPrice}
+                </div>
+                ${isAdminMode ? `
+                  <button
+                    onclick="openProductModal('${escapeJsAttr(product.id)}')"
+                    class="text-xs font-bold text-brand-gold hover:underline flex items-center gap-1 cursor-pointer"
+                  >
+                    <i class="fa-solid fa-tag"></i>تعديل
+                  </button>
+                ` : ''}
+              </div>
+
+              <button
+                onclick="orderViaWhatsApp('${escapeJsAttr(product.id)}')"
+                class="mt-4 w-full py-3 px-4 rounded-2xl bg-gradient-to-l from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-slate-950 font-black text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all duration-300 active:scale-[0.98] cursor-pointer"
+              >
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>اطلب الآن عبر واتساب</span>
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    /**
+     * =========================================================================
+     * Order Now -> WhatsApp Integration
+     * =========================================================================
+     */
+    function buildWhatsAppOrderUrl(product) {
+      const priceLine = product.price && String(product.price).trim() !== ''
+        ? `💰 السعر المعروض: ${product.price} ${product.currency || '$'}`
+        : `💰 السعر: أرغب بمعرفة السعر الحالي`;
+
+      const isPublicImageUrl = product.image && /^https?:\/\//i.test(product.image);
+      const imageLine = isPublicImageUrl
+        ? `\n🖼️ صورة المنتج:\n${product.image}`
+        : `\n🖼️ (تم اختيار المنتج من متجر شركة ضياء العلي)`;
+
+      const catPath = product.subcategory ? `${product.category} - ${product.subcategory}` : product.category;
+
+      const message =
+        `السلام عليكم شركة ضياء العلي التجارية 👋\n` +
+        `أرغب بطلب والاستفسار عن سعر المنتج التالي:\n\n` +
+        `📦 *المنتج:* ${product.name}\n` +
+        `🏷️ *القسم:* ${catPath}\n` +
+        `${priceLine}\n` +
+        (product.description ? `📝 *المواصفات:* ${product.description}\n` : '') +
+        `${imageLine}\n\n` +
+        `يرجى تزويدي بالتفاصيل والسعر النهائي، وشكراً لكم.`;
+
+      return `https://wa.me/${COMPANY_WHATSAPP}?text=${encodeURIComponent(message)}`;
+    }
+
+    function orderViaWhatsApp(productId) {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+
+      activeOrderProduct = product;
+      const waUrl = buildWhatsAppOrderUrl(product);
+
+      const safeFallback = `https://placehold.co/200x200/11151D/FF9900?text=DA`;
+      const imgEl = document.getElementById('order-img');
+      imgEl.src = product.image || safeFallback;
+      imgEl.onerror = () => { imgEl.src = safeFallback; };
+
+      document.getElementById('order-cat').textContent = product.subcategory || product.category;
+      document.getElementById('order-name').textContent = product.name;
+      document.getElementById('order-price').textContent =
+        product.price && String(product.price).trim() !== ''
+          ? `السعر: ${product.price} ${product.currency || '$'}`
+          : 'السعر: سيتم تزويدك به مباشرة عبر واتساب';
+
+      document.getElementById('order-wa-link').href = waUrl;
+
+      const shareBtn = document.getElementById('order-share-img-btn');
+      if (navigator.share && navigator.canShare) {
+        shareBtn.classList.remove('hidden');
+      } else {
+        shareBtn.classList.add('hidden');
+      }
+
+      document.getElementById('order-modal').classList.remove('hidden');
+    }
+
+    function closeOrderModal() {
+      document.getElementById('order-modal').classList.add('hidden');
+      activeOrderProduct = null;
+    }
+
+    async function shareProductWithImageFile() {
+      if (!activeOrderProduct) return;
+      try {
+        const text = `مرحباً شركة ضياء العلي التجارية (0997786117)، أرغب بالسعر والتفاصيل لـ: ${activeOrderProduct.name}`;
+        const response = await fetch(activeOrderProduct.image);
+        const blob = await response.blob();
+        const file = new File([blob], 'product-deaa-al-ali.jpg', { type: blob.type || 'image/jpeg' });
+
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({
+            title: activeOrderProduct.name,
+            text: text,
+            files: [file]
+          });
+          closeOrderModal();
+          return;
+        }
+      } catch (err) {
+        console.warn('Direct file share fallback to WhatsApp link:', err);
+      }
+      window.open(buildWhatsAppOrderUrl(activeOrderProduct), '_blank', 'noopener,noreferrer');
+      closeOrderModal();
+    }
+
+    /**
+     * =========================================================================
+     * Admin Mode: Password Protection, Products, Images & One-Click Export
+     * =========================================================================
+     */
+    function handleAdminButtonClick() {
+      if (isAdminMode) {
+        exitAdminMode();
+      } else {
+        openAdminLoginModal();
+      }
+    }
+
+    function openAdminLoginModal() {
+      const modal = document.getElementById('admin-login-modal');
+      const input = document.getElementById('admin-login-password');
+      const errEl = document.getElementById('admin-login-error');
+      input.value = '';
+      input.type = 'password';
+      errEl.classList.add('hidden');
+      modal.classList.remove('hidden');
+      setTimeout(() => input.focus(), 60);
+    }
+
+    function closeAdminLoginModal() {
+      document.getElementById('admin-login-modal').classList.add('hidden');
+    }
+
+    function verifyAdminLogin(event) {
+      event.preventDefault();
+      const input = document.getElementById('admin-login-password');
+      const errEl = document.getElementById('admin-login-error');
+      const entered = input.value.trim();
+
+      if (entered === currentAdminPassword) {
+        errEl.classList.add('hidden');
+        closeAdminLoginModal();
+        enterAdminMode();
+      } else {
+        errEl.classList.remove('hidden');
+        input.select();
+      }
+    }
+
+    function togglePasswordVisibility(inputId, btn) {
+      const input = document.getElementById(inputId);
+      if (!input) return;
+      const isPass = input.type === 'password';
+      input.type = isPass ? 'text' : 'password';
+      const icon = btn.querySelector('i');
+      if (icon) {
+        icon.className = isPass ? 'fa-regular fa-eye-slash' : 'fa-regular fa-eye';
+      }
+    }
+
+    function enterAdminMode() {
+      isAdminMode = true;
+      updateAdminUiVisibility();
+      showToast('مرحباً بك! تم فتح لوحة إدارة المتجر بنجاح.', 'success');
+      renderProducts();
+    }
+
+    function exitAdminMode() {
+      isAdminMode = false;
+      updateAdminUiVisibility();
+      showToast('تم قفل لوحة إدارة المتجر بنجاح.', 'info');
+      renderProducts();
+    }
+
+    function updateAdminUiVisibility() {
+      const toolbar = document.getElementById('admin-toolbar');
+      const btnLabel = document.getElementById('admin-btn-label');
+      const btnIcon = document.getElementById('admin-btn-icon');
+      const toggleBtn = document.getElementById('toggle-admin-btn');
+      const heroBgPill = document.getElementById('hero-change-bg-pill');
+      const catalogActions = document.getElementById('catalog-admin-actions');
+      const subcatAddBtn = document.getElementById('subcat-add-admin-btn');
+
+      if (isAdminMode) {
+        toolbar.classList.remove('hidden');
+        if (heroBgPill) heroBgPill.classList.remove('hidden');
+        if (catalogActions) catalogActions.classList.remove('hidden');
+        if (subcatAddBtn) subcatAddBtn.classList.remove('hidden');
+        btnLabel.textContent = 'قفل الإدارة';
+        if (btnIcon) btnIcon.className = 'fa-solid fa-lock-open';
+        toggleBtn.classList.add('bg-brand-gold', 'text-black');
+        toggleBtn.classList.remove('bg-brand-gold/10', 'text-brand-gold');
+      } else {
+        toolbar.classList.add('hidden');
+        if (heroBgPill) heroBgPill.classList.add('hidden');
+        if (catalogActions) catalogActions.classList.add('hidden');
+        if (subcatAddBtn) subcatAddBtn.classList.add('hidden');
+        btnLabel.textContent = 'إدارة المتجر';
+        if (btnIcon) btnIcon.className = 'fa-solid fa-lock';
+        toggleBtn.classList.remove('bg-brand-gold', 'text-black');
+        toggleBtn.classList.add('bg-brand-gold/10', 'text-brand-gold');
+      }
+    }
+
+    function openChangePasswordModal() {
+      if (!isAdminMode) return;
+      document.getElementById('current-admin-pass-input').value = '';
+      document.getElementById('new-admin-pass-input').value = '';
+      document.getElementById('confirm-admin-pass-input').value = '';
+      document.getElementById('change-pass-error').classList.add('hidden');
+      document.getElementById('change-password-modal').classList.remove('hidden');
+    }
+
+    function closeChangePasswordModal() {
+      document.getElementById('change-password-modal').classList.add('hidden');
+    }
+
+    function saveNewAdminPassword(event) {
+      event.preventDefault();
+      const currVal = document.getElementById('current-admin-pass-input').value.trim();
+      const newVal = document.getElementById('new-admin-pass-input').value.trim();
+      const confVal = document.getElementById('confirm-admin-pass-input').value.trim();
+      const errEl = document.getElementById('change-pass-error');
+
+      if (currVal !== currentAdminPassword) {
+        errEl.textContent = 'كلمة السر الحالية غير صحيحة.';
+        errEl.classList.remove('hidden');
+        return;
+      }
+      if (newVal.length < 4) {
+        errEl.textContent = 'يجب أن تتكون كلمة السر الجديدة من 4 خانات على الأقل.';
+        errEl.classList.remove('hidden');
+        return;
+      }
+      if (newVal !== confVal) {
+        errEl.textContent = 'كلمتا السر الجديدتان غير متطابقتين.';
+        errEl.classList.remove('hidden');
+        return;
+      }
+
+      currentAdminPassword = newVal;
+      try {
+        localStorage.setItem(ADMIN_PASS_STORAGE_KEY, newVal);
+        markLocalModified();
+      } catch (e) {}
+
+      closeChangePasswordModal();
+      showToast('تم تغيير كلمة سر الإدارة بنجاح! تذكّر حفظ الموقع للنشر لاعتمادها للجميع.', 'success');
+    }
+
+    function populateProductCategorySelects(selectedCat = null, selectedSub = null) {
+      const catSelect = document.getElementById('prod-category');
+      catSelect.innerHTML = categories.map(cat =>
+        `<option value="${escapeHtml(cat.id)}">${escapeHtml(cat.label)}</option>`
+      ).join('');
+
+      const targetCat = selectedCat && categories.some(c => c.id === selectedCat)
+        ? selectedCat
+        : (categories[0] ? categories[0].id : '');
+
+      catSelect.value = targetCat;
+      populateSubcategorySelect(targetCat, selectedSub);
+    }
+
+    function populateSubcategorySelect(catId, selectedSub = null) {
+      const subSelect = document.getElementById('prod-subcategory');
+      const catObj = categories.find(c => c.id === catId);
+      const subs = (catObj && Array.isArray(catObj.subcategories)) ? catObj.subcategories : [];
+
+      let optionsHtml = `<option value="">عام (بدون قسم فرعي محدد)</option>`;
+      optionsHtml += subs.map(s => `<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`).join('');
+      subSelect.innerHTML = optionsHtml;
+
+      if (selectedSub && subs.includes(selectedSub)) {
+        subSelect.value = selectedSub;
+      } else {
+        subSelect.value = '';
+      }
+    }
+
+    function openProductModal(productId = null) {
+      const modal = document.getElementById('product-modal');
+      const form = document.getElementById('product-form');
+      const title = document.getElementById('modal-title');
+      const preview = document.getElementById('prod-img-preview');
+
+      form.reset();
+      uploadedImageDataUrl = '';
+
+      if (productId) {
+        const prod = products.find(p => p.id === productId);
+        if (!prod) return;
+        title.textContent = 'تعديل المنتج والسعر';
+        document.getElementById('prod-id').value = prod.id;
+        document.getElementById('prod-name').value = prod.name;
+        populateProductCategorySelects(prod.category, prod.subcategory || '');
+        document.getElementById('prod-badge').value = prod.badge || '';
+        document.getElementById('prod-price').value = prod.price || '';
+        document.getElementById('prod-currency').value = prod.currency || '$';
+        document.getElementById('prod-desc').value = prod.description || '';
+
+        if (prod.image && prod.image.startsWith('data:')) {
+          uploadedImageDataUrl = prod.image;
+          document.getElementById('prod-img-url').value = '';
+          preview.src = prod.image;
+        } else {
+          document.getElementById('prod-img-url').value = prod.image || '';
+          preview.src = prod.image || 'https://placehold.co/200x200/11151D/FF9900?text=DA';
+        }
+      } else {
+        title.textContent = 'إضافة منتج جديد';
+        document.getElementById('prod-id').value = '';
+        const preCat = activeCategory !== 'الكل' ? activeCategory : null;
+        const preSub = activeSubcategory !== 'الكل' ? activeSubcategory : null;
+        populateProductCategorySelects(preCat, preSub);
+        preview.src = 'https://placehold.co/200x200/11151D/FF9900?text=DA';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeProductModal() {
+      document.getElementById('product-modal').classList.add('hidden');
+    }
+
+    function handleImageUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const img = new Image();
+        img.onload = function () {
+          const canvas = document.createElement('canvas');
+          const MAX_WIDTH = 720;
+          let width = img.width;
+          let height = img.height;
+
+          if (width > MAX_WIDTH) {
+            height = Math.round((height * MAX_WIDTH) / width);
+            width = MAX_WIDTH;
+          }
+
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, width, height);
+
+          uploadedImageDataUrl = canvas.toDataURL('image/jpeg', 0.78);
+          document.getElementById('prod-img-preview').src = uploadedImageDataUrl;
+          document.getElementById('prod-img-url').value = '';
+          showToast('تم تجهيز صورة المنتج بنجاح!', 'success');
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function previewImageUrl(url) {
+      if (url && url.trim() !== '') {
+        uploadedImageDataUrl = '';
+        const preview = document.getElementById('prod-img-preview');
+        preview.src = url.trim();
+        preview.onerror = () => {
+          preview.src = 'https://placehold.co/200x200/11151D/FF9900?text=DA';
+        };
+      }
+    }
+
+    function saveProduct(event) {
+      event.preventDefault();
+
+      const id = document.getElementById('prod-id').value;
+      const name = document.getElementById('prod-name').value.trim();
+      const category = document.getElementById('prod-category').value;
+      const subcategory = document.getElementById('prod-subcategory').value;
+      const badge = document.getElementById('prod-badge').value.trim();
+      const price = document.getElementById('prod-price').value.trim();
+      const currency = document.getElementById('prod-currency').value;
+      const description = document.getElementById('prod-desc').value.trim();
+      const urlInput = document.getElementById('prod-img-url').value.trim();
+
+      if (!name) {
+        showToast('يرجى إدخال اسم المنتج.', 'error');
+        return;
+      }
+
+      const finalImage =
+        uploadedImageDataUrl ||
+        urlInput ||
+        `https://placehold.co/600x450/11151D/FF9900?text=${encodeURIComponent(name.slice(0, 18))}`;
+
+      if (id) {
+        const idx = products.findIndex(p => p.id === id);
+        if (idx !== -1) {
+          products[idx] = { id, name, category, subcategory, badge, price, currency, description, image: finalImage };
+          showToast('تم تحديث بيانات وسعر المنتج بنجاح!', 'success');
+        }
+      } else {
+        const newProduct = {
+          id: 'p-' + Date.now(),
+          name,
+          category,
+          subcategory,
+          badge,
+          price,
+          currency,
+          description,
+          image: finalImage
+        };
+        products.unshift(newProduct);
+        showToast('تمت إضافة المنتج الجديد إلى المتجر بنجاح!', 'success');
+      }
+
+      persistProducts();
+      renderProducts();
+      closeProductModal();
+    }
+
+    function openDeleteModal(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+      pendingDeleteId = productId;
+      document.getElementById('delete-modal-text').textContent = `هل أنت متأكد من حذف "${prod.name}" من قائمة المنتجات؟`;
+      document.getElementById('delete-modal').classList.remove('hidden');
+    }
+
+    function closeDeleteModal() {
+      pendingDeleteId = null;
+      document.getElementById('delete-modal').classList.add('hidden');
+    }
+
+    function confirmDeleteProduct() {
+      if (!pendingDeleteId) return;
+      products = products.filter(p => p.id !== pendingDeleteId);
+      persistProducts();
+      renderProducts();
+      closeDeleteModal();
+      showToast('تم حذف المنتج بنجاح.', 'info');
+    }
+
+    /**
+     * One-Click Export Ready-to-Publish index.html
+     * Bakes all current products, photos, categories, and storefront background
+     * directly inside a single index.html file so every customer sees the updates online.
+     */
+    function exportPublishedHtml() {
+      try {
+        if (!CLEAN_TEMPLATE_HTML) {
+          showToast('تعذر تجهيز ملف النشر، يرجى إعادة تحميل الصفحة.', 'error');
+          return;
+        }
+        const bakedPayload = {
+          publishedAt: Date.now(),
+          products: products,
+          categories: categories,
+          heroBg: currentHeroBg,
+          adminPass: currentAdminPassword
+        };
+        const safeJson = JSON.stringify(bakedPayload).replace(/<\/script>/gi, '<\\/script>');
+        const replacementTag = `<script id="baked-store-data">window.__BAKED_STORE_DATA__ = ${safeJson};<\/script>`;
+
+        const finalHtml = CLEAN_TEMPLATE_HTML.replace(
+          /<script id="baked-store-data">[\s\S]*?<\/script>/,
+          () => replacementTag
+        );
+
+        const blob = new Blob([finalHtml], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'index.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('تم تنزيل ملف index.html الجاهز للنشر! ارفعه الآن على Netlify أو GitHub ليظهر لجميع الزبائن.', 'success');
+      } catch (err) {
+        console.error('Publish export failed:', err);
+        showToast('حدث خطأ أثناء تجهيز ملف النشر.', 'error');
+      }
+    }
+
+    /**
+     * =========================================================================
+     * Category & Subcategory Management
+     * =========================================================================
+     */
+    function openCategoryModal() {
+      renderCategoriesManager();
+      document.getElementById('category-modal').classList.remove('hidden');
+    }
+
+    function closeCategoryModal() {
+      document.getElementById('category-modal').classList.add('hidden');
+    }
+
+    function renderCategoriesManager() {
+      const parentSelect = document.getElementById('parent-cat-select');
+      const listContainer = document.getElementById('categories-manager-list');
+
+      parentSelect.innerHTML = categories.map(cat =>
+        `<option value="${escapeHtml(cat.id)}">${escapeHtml(cat.label)}</option>`
+      ).join('');
+
+      listContainer.innerHTML = categories.map((cat, catIndex) => `
+        <div class="p-4 rounded-2xl bg-brand-obsidian/70 border border-white/10 space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="w-8 h-8 rounded-lg bg-brand-gold/15 text-brand-gold flex items-center justify-center text-sm">
+                <i class="fa-solid ${escapeHtml(cat.icon || 'fa-box')}"></i>
+              </span>
+              <span class="font-black text-white text-sm">${escapeHtml(cat.label)}</span>
+              <span class="text-[11px] text-slate-400">(${(cat.subcategories || []).length} فرعي)</span>
+            </div>
+            ${categories.length > 1 ? `
+              <button
+                type="button"
+                onclick="deleteMainCategory(${catIndex})"
+                class="text-xs px-2.5 py-1 rounded-lg bg-red-500/15 hover:bg-red-500 text-red-400 hover:text-white font-bold transition cursor-pointer"
+              >
+                حذف القسم
+              </button>
+            ` : ''}
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            ${(cat.subcategories && cat.subcategories.length > 0)
+              ? cat.subcategories.map((sub, subIdx) => `
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-brand-surface border border-white/10 text-xs font-bold text-slate-200">
+                    <span>${escapeHtml(sub)}</span>
+                    <button
+                      type="button"
+                      onclick="deleteSubCategory(${catIndex}, ${subIdx})"
+                      class="text-slate-400 hover:text-red-400 transition cursor-pointer"
+                      title="حذف القسم الفرعي"
+                    >
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </span>
+                `).join('')
+              : `<span class="text-xs text-slate-500">لا توجد أقسام فرعية مضافة بعد.</span>`
+            }
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function addMainCategory(event) {
+      event.preventDefault();
+      const nameInput = document.getElementById('new-main-cat-name');
+      const iconSelect = document.getElementById('new-main-cat-icon');
+      const name = nameInput.value.trim();
+
+      if (!name) return;
+      if (categories.some(c => c.id === name || c.label === name)) {
+        showToast('هذا القسم موجود بالفعل!', 'error');
+        return;
+      }
+
+      categories.push({
+        id: name,
+        label: name,
+        icon: iconSelect.value || 'fa-box-open',
+        subcategories: []
+      });
+
+      nameInput.value = '';
+      persistCategories();
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderCategoriesManager();
+      showToast(`تمت إضافة القسم الرئيسي "${name}" بنجاح!`, 'success');
+    }
+
+    function addSubCategory(event) {
+      event.preventDefault();
+      const parentId = document.getElementById('parent-cat-select').value;
+      const subInput = document.getElementById('new-sub-cat-name');
+      const subName = subInput.value.trim();
+
+      if (!subName) return;
+      const parentCat = categories.find(c => c.id === parentId);
+      if (!parentCat) return;
+
+      if (!Array.isArray(parentCat.subcategories)) parentCat.subcategories = [];
+      if (parentCat.subcategories.includes(subName)) {
+        showToast('هذا القسم الفرعي موجود بالفعل ضمن هذا القسم!', 'error');
+        return;
+      }
+
+      parentCat.subcategories.push(subName);
+      subInput.value = '';
+      persistCategories();
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderCategoriesManager();
+      showToast(`تمت إضافة "${subName}" إلى قسم ${parentCat.label}!`, 'success');
+    }
+
+    function deleteMainCategory(catIndex) {
+      if (categories.length <= 1) return;
+      const removed = categories[catIndex];
+      categories.splice(catIndex, 1);
+      if (activeCategory === removed.id) {
+        activeCategory = 'الكل';
+        activeSubcategory = 'الكل';
+      }
+      persistCategories();
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderProducts();
+      renderCategoriesManager();
+      showToast(`تم حذف قسم "${removed.label}".`, 'info');
+    }
+
+    function deleteSubCategory(catIndex, subIdx) {
+      const cat = categories[catIndex];
+      if (!cat || !cat.subcategories) return;
+      const removedSub = cat.subcategories[subIdx];
+      cat.subcategories.splice(subIdx, 1);
+      if (activeSubcategory === removedSub) {
+        activeSubcategory = 'الكل';
+      }
+      persistCategories();
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderProducts();
+      renderCategoriesManager();
+      showToast(`تم حذف القسم الفرعي "${removedSub}".`, 'info');
+    }
+
+    function resetCategoriesToDefault() {
+      categories = JSON.parse(JSON.stringify(DEFAULT_CATEGORIES));
+      activeCategory = 'الكل';
+      activeSubcategory = 'الكل';
+      persistCategories();
+      renderCategoryTabs();
+      renderSubcategoryTabs();
+      renderProducts();
+      renderCategoriesManager();
+      showToast('تمت استعادة جميع الأقسام الافتراضية بنجاح.', 'success');
+    }
+
+    /**
+     * =========================================================================
+     * Storefront Hero Background Image Manager
+     * =========================================================================
+     */
+    function openHeroBgModal() {
+      const currentSrc = document.getElementById('hero-bg-image').src;
+      document.getElementById('hero-bg-preview').src = currentSrc;
+      document.getElementById('hero-bg-url-input').value = currentSrc.startsWith('http') ? currentSrc : '';
+      document.getElementById('hero-bg-modal').classList.remove('hidden');
+    }
+
+    function closeHeroBgModal() {
+      document.getElementById('hero-bg-modal').classList.add('hidden');
+    }
+
+    function handleHeroBgUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const img = new Image();
+        img.onload = function () {
+          const canvas = document.createElement('canvas');
+          const MAX_WIDTH = 1400;
+          let width = img.width;
+          let height = img.height;
+          if (width > MAX_WIDTH) {
+            height = Math.round((height * MAX_WIDTH) / width);
+            width = MAX_WIDTH;
+          }
+          canvas.width = width;
+          canvas.height = height;
+          canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.8);
+          try {
+            currentHeroBg = dataUrl;
+            localStorage.setItem(HERO_BG_STORAGE_KEY, dataUrl);
+            markLocalModified();
+            document.getElementById('hero-bg-image').src = dataUrl;
+            document.getElementById('hero-bg-preview').src = dataUrl;
+            showToast('تم تحديث صورة واجهة المحل في الخلفية بنجاح!', 'success');
+          } catch (err) {
+            showToast('حجم الصورة كبير للتخزين، جرب صورة أصغر أو رابط صورة.', 'error');
+          }
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function applyHeroBgUrl() {
+      const url = document.getElementById('hero-bg-url-input').value.trim();
+      if (!url) {
+        showToast('يرجى إدخال رابط صورة صالح.', 'error');
+        return;
+      }
+      currentHeroBg = url;
+      localStorage.setItem(HERO_BG_STORAGE_KEY, url);
+      markLocalModified();
+      document.getElementById('hero-bg-image').src = url;
+      document.getElementById('hero-bg-preview').src = url;
+      showToast('تم تطبيق صورة خلفية المحل بنجاح!', 'success');
+    }
+
+    function resetHeroBgDefault() {
+      currentHeroBg = DEFAULT_HERO_BG;
+      localStorage.removeItem(HERO_BG_STORAGE_KEY);
+      markLocalModified();
+      document.getElementById('hero-bg-image').src = DEFAULT_HERO_BG;
+      document.getElementById('hero-bg-preview').src = DEFAULT_HERO_BG;
+      document.getElementById('hero-bg-url-input').value = '';
+      showToast('تمت استعادة صورة الخلفية الافتراضية.', 'info');
+    }
+
+    /**
+     * =========================================================================
+     * Customer Service Form & FAQ Accordion Logic
+     * =========================================================================
+     */
+    function sendCustomerServiceRequest(event) {
+      event.preventDefault();
+      const name = document.getElementById('cs-name').value.trim();
+      const phone = document.getElementById('cs-phone').value.trim();
+      const serviceType = document.getElementById('cs-type').value;
+      const details = document.getElementById('cs-message').value.trim();
+
+      if (!name || !details) {
+        showToast('يرجى تعبئة الاسم وتفاصيل الاستفسار.', 'error');
+        return;
+      }
+
+      const msg =
+        `السلام عليكم خدمة زبائن شركة ضياء العلي التجارية 👋\n\n` +
+        `👤 *الاسم:* ${name}\n` +
+        (phone ? `📱 *رقم الجوال:* ${phone}\n` : '') +
+        `📌 *نوع الطلب:* ${serviceType}\n` +
+        `📝 *التفاصيل:*\n${details}`;
+
+      const waUrl = `https://wa.me/${COMPANY_WHATSAPP}?text=${encodeURIComponent(msg)}`;
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+      event.target.reset();
+      showToast('تم تجهيز رسالتك وتوجيهك مباشرة لواتساب خدمة الزبائن!', 'success');
+    }
+
+    function toggleFaq(num) {
+      const body = document.getElementById(`faq-body-${num}`);
+      const icon = document.getElementById(`faq-icon-${num}`);
+      if (!body || !icon) return;
+      const isHidden = body.classList.toggle('hidden');
+      icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+    }
+
+    /**
+     * =========================================================================
+     * Export & Import JSON Catalog Backup
+     * =========================================================================
+     */
+    function exportCatalogData() {
+      try {
+        const backupPayload = { products, categories, heroBg: currentHeroBg };
+        const dataStr = JSON.stringify(backupPayload, null, 2);
+        const blob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'deaa-al-ali-catalog.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('تم تنزيل نسخة احتياطية كاملة للمنتجات والأقسام.', 'success');
+      } catch (e) {
+        showToast('تعذر تصدير النسخة الاحتياطية.', 'error');
+      }
+    }
+
+    function importCatalogData(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (Array.isArray(imported) && imported.length > 0) {
+            products = imported;
+            persistProducts();
+          } else if (imported && Array.isArray(imported.products)) {
+            products = imported.products;
+            persistProducts();
+            if (Array.isArray(imported.categories) && imported.categories.length > 0) {
+              categories = imported.categories;
+              persistCategories();
+            }
+            if (imported.heroBg) {
+              currentHeroBg = imported.heroBg;
+              localStorage.setItem(HERO_BG_STORAGE_KEY, currentHeroBg);
+              document.getElementById('hero-bg-image').src = currentHeroBg;
+            }
+          } else {
+            showToast('الملف غير صالح أو فارغ.', 'error');
+            return;
+          }
+          renderCategoryTabs();
+          renderSubcategoryTabs();
+          renderProducts();
+          showToast('تم استيراد المنتجات والأقسام بنجاح!', 'success');
+        } catch (err) {
+          showToast('حدث خطأ في قراءة ملف النسخة الاحتياطية.', 'error');
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+
+    /**
+     * =========================================================================
+     * ShamCash QR Code Generator & Copy Utility
+     * =========================================================================
+     */
+    function generateShamCashQRCodes() {
+      try {
+        if (typeof QRCode === 'undefined') return;
+
+        const smallContainer = document.getElementById('shamcash-qr');
+        if (smallContainer) {
+          smallContainer.innerHTML = '';
+          new QRCode(smallContainer, {
+            text: SHAMCASH_WALLET,
+            width: 185,
+            height: 185,
+            colorDark: '#2F446E',
+            colorLight: '#FFFFFF',
+            correctLevel: QRCode.CorrectLevel.H
+          });
+        }
+
+        const largeContainer = document.getElementById('shamcash-qr-large');
+        if (largeContainer) {
+          largeContainer.innerHTML = '';
+          new QRCode(largeContainer, {
+            text: SHAMCASH_WALLET,
+            width: 240,
+            height: 240,
+            colorDark: '#2F446E',
+            colorLight: '#FFFFFF',
+            correctLevel: QRCode.CorrectLevel.H
+          });
+        }
+      } catch (err) {
+        console.error('QR generation failed:', err);
+      }
+    }
+
+    function openQrModal() {
+      document.getElementById('qr-modal').classList.remove('hidden');
+    }
+
+    function closeQrModal() {
+      document.getElementById('qr-modal').classList.add('hidden');
+    }
+
+    function copyText(text, successMessage) {
+      try {
+        const tempInput = document.createElement('textarea');
+        tempInput.value = text;
+        tempInput.setAttribute('readonly', '');
+        tempInput.style.position = 'fixed';
+        tempInput.style.top = '-9999px';
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999);
+        const copied = document.execCommand('copy');
+        document.body.removeChild(tempInput);
+
+        if (copied) {
+          showToast(successMessage || 'تم النسخ بنجاح!', 'success');
+        } else {
+          showToast('تعذر النسخ التلقائي، يرجى التحديد والنسخ يدوياً.', 'error');
+        }
+      } catch (e) {
+        showToast('تعذر النسخ، يرجى النسخ يدوياً.', 'error');
+      }
+    }
+
+    /**
+     * =========================================================================
+     * Mobile Menu, Scroll Reveal, Toast & Security Utilities
+     * =========================================================================
+     */
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      const isHidden = menu.classList.toggle('hidden');
+      icon.className = isHidden ? 'fa-solid fa-bars text-lg' : 'fa-solid fa-xmark text-lg';
+    }
+
+    function closeMobileMenu() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+      document.getElementById('mobile-menu-icon').className = 'fa-solid fa-bars text-lg';
+    }
+
+    function initScrollReveal() {
+      const elements = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+        elements.forEach(el => observer.observe(el));
+      } else {
+        elements.forEach(el => el.classList.add('visible'));
+      }
+    }
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+
+      const styles = {
+        success: 'bg-emerald-500 text-slate-950 border-emerald-400',
+        error: 'bg-red-500 text-white border-red-400',
+        info: 'bg-brand-gold text-slate-950 border-amber-300'
+      };
+      const icons = {
+        success: 'fa-circle-check',
+        error: 'fa-circle-exclamation',
+        info: 'fa-circle-info'
+      };
+
+      toast.className = `pointer-events-auto flex items-center gap-2.5 px-5 py-3 rounded-2xl border shadow-2xl font-bold text-xs sm:text-sm transition-all duration-300 transform translate-y-0 opacity-100 ${styles[type] || styles.info}`;
+      toast.innerHTML = `<i class="fa-solid ${icons[type] || icons.info} text-base"></i><span>${escapeHtml(message)}</span>`;
+
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(-12px)';
+        setTimeout(() => toast.remove(), 300);
+      }, 3600);
+    }
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function escapeJsAttr(str) {
+      return escapeHtml(String(str || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"));
+    }
+  </script>
+</body>
+</html>
